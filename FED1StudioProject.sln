@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1525
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FED1StudioProject", "FED1StudioProject\FED1StudioProject.csproj", "{16179B03-0E25-467F-AFB4-50C30D399D7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSandbox", "..\WebSandbox\WebSandbox\WebSandbox.csproj", "{6A68DAED-3CD3-467D-8225-A48F91ABEF69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16179B03-0E25-467F-AFB4-50C30D399D7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16179B03-0E25-467F-AFB4-50C30D399D7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16179B03-0E25-467F-AFB4-50C30D399D7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16179B03-0E25-467F-AFB4-50C30D399D7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A68DAED-3CD3-467D-8225-A48F91ABEF69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A68DAED-3CD3-467D-8225-A48F91ABEF69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A68DAED-3CD3-467D-8225-A48F91ABEF69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A68DAED-3CD3-467D-8225-A48F91ABEF69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A58A1F3-3DAF-41A9-97B9-1CC151C5EC62}
+	EndGlobalSection
+EndGlobal
