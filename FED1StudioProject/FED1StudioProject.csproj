@@ -69,6 +69,17 @@
   <ItemGroup>
     <Content Include="Classes.html" />
     <Content Include="Contact.html" />
+    <Content Include="Favicon black and beige.html" />
+    <Content Include="favicon.ico" />
+    <Content Include="images\changing, rotating tire.jpg" />
+    <Content Include="images\dude helping guy in hood of car.jpg" />
+    <Content Include="images\dude working on big car part.jpg" />
+    <Content Include="images\dude working on car-unsplash.jpg" />
+    <Content Include="images\ford trucks on lifts.jpg" />
+    <Content Include="images\guy smiling under hood of yellow jeep.jpg" />
+    <Content Include="images\pouring that oil.jpg" />
+    <Content Include="images\under a car.jpg" />
+    <Content Include="CSS.css" />
     <Content Include="Team.html" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
@@ -86,7 +97,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="images\" />
     <Folder Include="scripts\" />
     <Folder Include="stylesheets\" />
   </ItemGroup>

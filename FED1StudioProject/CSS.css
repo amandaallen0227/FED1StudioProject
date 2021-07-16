@@ -1,0 +1,420 @@
+﻿
+@import url('import.css');
+/*adobe theme colors:
+    purple: #535FA6
+    beige:#F2E2CE
+    light brown:#A69586
+    orange:#F27127
+    black:#262626
+*/
+header {
+    background-color: #F2E2CE;
+    font: white; 
+}
+
+header h1 p {
+    font-family: monospace;
+}
+
+main {
+    background-color: antiquewhite;
+}
+
+footer {
+    background-color: #262626;
+    color: white;
+}
+
+h1 {
+    color: #262626;
+    font-size: 37px;
+}
+/*Nav Styling*/
+/*we are changing the resource index by using class*/
+/*Vertial Link Blocks*/
+
+ul.blockList {
+    background-color: #F2E2CE;
+    list-style: none;
+}
+
+    ul.blockList a {
+        color: #262626;
+        text-align: center;
+        display: block;
+        /*display block makes the entire horizontal element clickable*/
+    }
+        /*CSS pseudo selectors allow us to change CSS styling based upon page events, such as hovering over an element or targeting an element.*/
+
+        ul.blockList a:hover {
+            background-color: #262626;
+            color: #F2E2CE;
+        }
+/*Site Nav*/
+/*below affects color of display for links in contact*/
+a {
+    color: #262626;
+    font-weight: bold;
+    text-decoration: none;
+}
+/*below is affecting links on contact page*/
+    a:hover, a:active, a:focus {
+        color: #262626;
+        text-decoration: none;
+        background-color: lightgrey;
+     
+    }
+
+nav a {
+    color: #262626;
+}
+
+    nav a:hover, a:active, a:focus {
+        text-decoration: none;
+        color: #262626;
+    }
+
+nav ul {
+    background-color: white;
+}
+
+nav li:hover {
+    background-color: #A69586;
+}
+
+nav li {
+    display: inline-block;
+    color: #262626;
+}
+/*padding is the space between elements that they are next to.*/
+
+/*NAV BAR*/
+nav ul li a {
+    padding: 1em;
+    display: block;
+    color: #262626;
+}
+/*Nav page highlighting*/
+.selected {
+    background-color: darkblue;
+}
+/*colors */
+#colordemo1 {
+    background-color: #6B00E0;
+    color: #FA1592;
+}
+
+#colordemo2 {
+    background-color: #BBB;
+    color: #222
+}
+
+#colordemo3 {
+    background-color: rgb(50,37,69);
+    color: rgb(200,200,200);
+}
+
+#colordemo4 {
+    rgba(20,24,40, 1);
+    color: rgb(255,10,8);
+}
+
+#colorGradient1 {
+    background-image: linear-gradient(90deg, red, yellow);
+}
+
+#colorGradient2 {
+    background-image: radial-gradient(circle fartherest-side at 50% 60%, pink, purple, blue);
+}
+
+#fontdemo1 {
+    font-family: serif;
+}
+
+#fontdemo2 {
+    font-family: sans-serif;
+}
+
+#fontdemo3 {
+    font-family: cursive;
+}
+
+#fontdemo4 {
+    font-family: monospace;
+}
+
+#fontdemo5 {
+    font-family: fantasy;
+}
+
+.bond {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.small-caps {
+    font-variant: small-caps;
+}
+
+.letter-spacing {
+    letter-spacing: 3em;
+}
+
+.word-spacing {
+    word-spacing: 1em;
+}
+/*EM is just a capital letter EM in whatever that font is*/
+/*.cdnDemo1 {
+    font-family: 'Faster One', cursive;
+}*/
+.cdnDemo2 {
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+.cdnDemo3 {
+    font-family: 'Vesper Libre', serif;
+}
+
+/*#region Images*/
+/*
+    Imagine Syntax:
+    <ima src-"path/file.ext" alt="descriptive text" title="short description"/>
+    css Image Properties:
+    background-url: allows you to pass the url of an image to set it as a background
+    background-repeat: determines if the image is not big enough to fill the space - should it repeat in the background
+    background-attachment: determines if the image is scrollable(image and content move as i scroll down) or fixed(background image stays still, the content moves)
+    background-postion: position the image in the viewport
+        - you can set specific x(horizontal) and y(vertical) position values using px, em, %
+    background-size: (it is not simple and often takes a long time to nail down and get right)
+        - Cover: allows the browser to stretch the image to completely fill the space (could result in truncation - part if it gets cut off. b/c the measurements don't change so we don't warp the image.)
+        - Contain: scale to the largest size possible without trunction.
+
+    Shorthand:
+    background: color, url(path/file.ext), position/size, repeat, attachment
+
+    If you set a bg image using CSS, you cannnot provide an alt attribute. Therefore, you must provide an alternative way of describing the image.
+    (put it on a div)
+*/
+
+ul li {
+    list-style-image: url(../Images/bullet_point_image_teal.png);
+}
+
+aside ul li {
+    list-style-image: url(../Images/bullet_point_image_orange.png);
+}
+
+/*Background Images*/
+header {
+    background-image: url('../images/ford trucks on lifts.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*positioning a single image through CSS*/
+#headerOverlay {
+    background-image: url(../Images/computer_icon.png);
+    background-repeat: no-repeat;
+    background-size: 90px;
+    background-position: 3% center; /*horizontal vertical*/
+    padding: 3em;
+}
+
+header h1, header p {
+    margin: 7px 0 7px 150px;
+    /*This clears the text of the bg image are*/
+}
+
+header h1 {
+    text-align: left;
+    letter-spacing: 0.1em;
+    color: #262626;
+}
+
+header {
+    border-radius: 5px;
+}
+
+/*background image for the entire page*/
+body {
+    background: url(../Images/ben-krygsman-745458-unsplash.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0; /*margin removes the browsers margin that it presuposses on there*/
+}
+
+/*This is a super sweet border that you may want to comment out later*/
+nav ul {
+    min-height: 52px;
+    background-image: url(../Images/border_wave.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 200px;
+}
+
+/*endregion*/
+
+/*#region CSS Box Model*/
+
+/*
+    CSS Box Model
+    for elements that are block level or are styled t o have a display of inline=block, you can use the CSS box model
+
+    Display: Inline-block
+    - act like an inline element and only take up enough space for its content
+    - still want to have the box model properties available
+
+    Elements of the box model are content (including height and width), padding, border, and margin
+
+    Syntax options for padding and margin (no commas)
+    1 value: all side
+    2 values: TB LR
+    3 values: T LR B
+    4 values: T R B L (clock-wise)
+
+    Possible Values
+    px (fixed width)
+    em (multiplire based on font-size in the current context)
+    % (based on the width of the parent container - typically used for horizontal positioning)
+
+
+*/
+
+
+/*Create a gallery layout for images.html*/
+
+div.galleryItem {
+    margin: 5px;
+    border: 1px solid#CCC;
+    display: inline-block; /*this is the line of code that allows the divs to line up next to each other*/
+    width: 350px; /*applies just to the content does not apply to padding and margin*/
+}
+
+
+    div.galleryItem:hover {
+        border: 1px solid lightsalmon;
+    }
+
+    div.galleryItem img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.galleryItem a:hover {
+        background-color: lightsalmon;
+    }
+
+#imageGallery {
+    margin: 0 auto; /*0 margin for top and bottom and then automaticly figure out the margin for L and R so that this is CENTER - this centers the elemet with the id of imageGallery */
+    width: 85%;
+    text-align: center; /*this centers the content inside the element with the id of imageGalley*/
+}
+
+.mainWrapper {
+    padding: 1%;
+}
+
+footer {
+    padding: 3%
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+aside h2 {
+    padding: 2%;
+}
+
+/*endregion*/
+
+
+
+/*#region Float & Clear*/
+/*
+    Floar & Clear Notes
+
+    Floating an element in HTML is when you move it to the left or right of its parenting container.
+
+    Floating an element can cause the parenting container to collapse because the element is not longer contributing to its height.
+
+    You can use clears to force parenting containers to maintain their height and ensure that content from below does NOT flow up beside the floated element. (Clear is the line in the sand)
+    
+    Clears only clear the container they are placed in.
+*/
+
+#html, #js {
+    float: right;
+    height: 75px;
+    margin-left: 20px;
+}
+
+#css {
+    float: left;
+    height: 75px;
+    margin-right: 20px;
+}
+
+#frontendDev section {
+    width: 85%;
+    margin: 0 auto;
+}
+
+    #frontendDev section h3 {
+        margin: 10px 75px;
+    }
+
+    #frontendDev section p {
+        margin: 0 75px;
+    }
+
+/* For the index.html -2 column layout where 1 column is floated*/
+#leftColumn {
+    width: 73%;
+    border-right: 1px dashed #262626;
+}
+
+#rightColumn {
+    width: 25%;
+    float: right;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+/*for HTML.html - 2 column layout with 1 column floated and margin to clear the space for the content*/
+
+#htmlLeftColumn {
+    margin-right: 25%;
+    border-right: 1px dashed #262626;
+}
+
+#htmlRightColumn {
+    width: 25%;
+    float: right;
+}
+
+/*For CSS.html - 2 column layout with both columns floated - because both columns are floated we do NOT want the parent element to collapse so we have to add in a clear (line in the sand)*/
+
+#cssLeftColumn {
+    width: 75%; /*if we are floating it to the left or right it has to be less than 100%*/
+    float: left;
+    border-right: 1px dashed #262626;
+    box-sizing: border-box;
+    /*this changes the way width and height are figured. With border-box you are saying that the 73% width includes not only content but also padding and border*/
+}
+
+#cssRightColumn { /*I made a mistake here initially becaues i put cssLeftColumn instead of cssRightColumn. This cause the css.html page to switch the content that was supposed to be on the left to on the right and vice versa.*/
+    width: 25%;
+    float: right;
+}
+
+.clear {
+    clear: both; /*a clear has to be put inside the PARENT*/
+}
+/*#endregion*/
