@@ -71,15 +71,30 @@
     <Content Include="Contact.html" />
     <Content Include="Favicon black and beige.html" />
     <Content Include="favicon.ico" />
-    <Content Include="images\changing, rotating tire.jpg" />
-    <Content Include="images\dude helping guy in hood of car.jpg" />
-    <Content Include="images\dude working on big car part.jpg" />
-    <Content Include="images\dude working on car-unsplash.jpg" />
-    <Content Include="images\ford trucks on lifts.jpg" />
-    <Content Include="images\guy smiling under hood of yellow jeep.jpg" />
-    <Content Include="images\pouring that oil.jpg" />
-    <Content Include="images\under a car.jpg" />
     <Content Include="CSS.css" />
+    <Content Include="images\about.txt" />
+    <Content Include="images\android-chrome-192x192.png" />
+    <Content Include="images\android-chrome-512x512.png" />
+    <Content Include="images\apple-touch-icon.png" />
+    <Content Include="images\barista about to tamp.jpg" />
+    <Content Include="images\barista tamping.jpg" />
+    <Content Include="images\blind basket with entire espresso machine.jpg" />
+    <Content Include="images\Chemex.jpg" />
+    <Content Include="images\coffe fruit more.jpg" />
+    <Content Include="images\coffee fruit.jpg" />
+    <Content Include="images\coffee menu.jpg" />
+    <Content Include="images\different roast coffee beans.jpg" />
+    <Content Include="images\espresso from blind basket.jpg" />
+    <Content Include="images\espresso grinder.jpg" />
+    <Content Include="images\espresso machine parts.jpg" />
+    <Content Include="images\favicon-16x16.png" />
+    <Content Include="images\favicon-32x32.png" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\female barista.jpg" />
+    <Content Include="images\flavory wheel.jpg" />
+    <Content Include="images\outside coffee shop corner.jpg" />
+    <Content Include="images\roaster.jpg" />
+    <Content Include="images\roaster2.jpg" />
     <Content Include="Team.html" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
@@ -88,6 +103,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\site.webmanifest" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
