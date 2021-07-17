@@ -95,6 +95,9 @@
     <Content Include="images\outside coffee shop corner.jpg" />
     <Content Include="images\roaster.jpg" />
     <Content Include="images\roaster2.jpg" />
+    <Content Include="images\second coffee grinder.jpg" />
+    <Content Include="images\second espresso machine image.jpg" />
+    <Content Include="images\water_ Font Awesome Icons.html" />
     <Content Include="Team.html" />
     <Content Include="index.html" />
     <Content Include="Web.config" />

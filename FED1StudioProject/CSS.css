@@ -1,181 +1,99 @@
 ﻿
+/*- Cannot figure out how to create Image Gallery in my Classes.html
+    Need a refresher on margin
+    Where can I put color so that I know it will apply and I don't have to apply it anywhere else?
+*/
+
 @import url('import.css');
 /*adobe theme colors:
-    purple: #535FA6
-    beige:#F2E2CE
-    light brown:#A69586
-    orange:#F27127
-    black:#262626
 */
-header {
+
+/*background image for the entire page*/
+body { /*KEEP*/
+    /*background: url(../Images/ben-krygsman-745458-unsplash.jpg) no-repeat center center fixed;
+    background-size: cover;*/
+    margin: 1%; /*margin removes the browsers margin that it presuposses on there*/
+}
+
+
+header {        /*KEEP*/
     background-color: #F2E2CE;
-    font: white; 
+    font: 99px; 
 }
 
-header h1 p {
-    font-family: monospace;
+header h1, header p { /*KEEP*/
+    margin: 7px 0 7px 150px;
+    /*This clears the text of the bg image are*/
+}
+header { /*KEEP*/
+    background-image: url(../Images/a-r-t-paola-589990-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    header h1 { /*KEEP*/
+        /*text-align: left;*/
+        letter-spacing: 0.1em;
+        color: #262626;
+    }
+h1 { /*KEEP*/
+    font-size: 91px;
 }
 
-main {
+main{  /*KEEP*/
     background-color: antiquewhite;
 }
+    main section article h2 {   /*KEEP*/
+        font-size: 37px;
+    }
 
-footer {
+
+
+footer {    /*KEEP*/
     background-color: #262626;
     color: white;
 }
-
-h1 {
-    color: #262626;
-    font-size: 37px;
-}
-/*Nav Styling*/
-/*we are changing the resource index by using class*/
-/*Vertial Link Blocks*/
-
-ul.blockList {
-    background-color: #F2E2CE;
-    list-style: none;
+footer { /*KEEP*/
+    padding: 1%
 }
 
-    ul.blockList a {
-        color: #262626;
-        text-align: center;
-        display: block;
-        /*display block makes the entire horizontal element clickable*/
-    }
-        /*CSS pseudo selectors allow us to change CSS styling based upon page events, such as hovering over an element or targeting an element.*/
 
-        ul.blockList a:hover {
-            background-color: #262626;
-            color: #F2E2CE;
-        }
-/*Site Nav*/
+ul.blockList a:hover { /*KEEP*/
+    background-color: #262626;
+    color: #F2E2CE;
+}
+
+ul.blockList a:hover { /*KEEP*/
+    background-color: #262626;
+    color: #F2E2CE;
+}
+
 /*below affects color of display for links in contact*/
-a {
+a { /*KEEP*/
     color: #262626;
     font-weight: bold;
     text-decoration: none;
 }
-/*below is affecting links on contact page*/
-    a:hover, a:active, a:focus {
+    /*below is affecting links on contact page*/
+    a:hover, a:active, a:focus { /*KEEP*/
         color: #262626;
         text-decoration: none;
         background-color: lightgrey;
-     
     }
-
-nav a {
-    color: #262626;
-}
-
-    nav a:hover, a:active, a:focus {
-        text-decoration: none;
-        color: #262626;
-    }
-
 nav ul {
-    background-color: white;
+    background-color: white; /*KEEP b/c we are making the nav bar white instead of the browser choosing the background to be white for us.*/
 }
-
-nav li:hover {
-    background-color: #A69586;
-}
-
-nav li {
+nav li {    /*KEEP*/
     display: inline-block;
     color: #262626;
 }
-/*padding is the space between elements that they are next to.*/
-
-/*NAV BAR*/
-nav ul li a {
+nav ul li a { /*KEEP*/
     padding: 1em;
     display: block;
     color: #262626;
 }
-/*Nav page highlighting*/
-.selected {
-    background-color: darkblue;
-}
-/*colors */
-#colordemo1 {
-    background-color: #6B00E0;
-    color: #FA1592;
-}
-
-#colordemo2 {
-    background-color: #BBB;
-    color: #222
-}
-
-#colordemo3 {
-    background-color: rgb(50,37,69);
-    color: rgb(200,200,200);
-}
-
-#colordemo4 {
-    rgba(20,24,40, 1);
-    color: rgb(255,10,8);
-}
-
-#colorGradient1 {
-    background-image: linear-gradient(90deg, red, yellow);
-}
-
-#colorGradient2 {
-    background-image: radial-gradient(circle fartherest-side at 50% 60%, pink, purple, blue);
-}
-
-#fontdemo1 {
-    font-family: serif;
-}
-
-#fontdemo2 {
-    font-family: sans-serif;
-}
-
-#fontdemo3 {
-    font-family: cursive;
-}
-
-#fontdemo4 {
-    font-family: monospace;
-}
-
-#fontdemo5 {
-    font-family: fantasy;
-}
-
-.bond {
-    font-weight: bold;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.small-caps {
-    font-variant: small-caps;
-}
-
-.letter-spacing {
-    letter-spacing: 3em;
-}
-
-.word-spacing {
-    word-spacing: 1em;
-}
-/*EM is just a capital letter EM in whatever that font is*/
-/*.cdnDemo1 {
-    font-family: 'Faster One', cursive;
-}*/
-.cdnDemo2 {
-    font-family: 'Montserrat Subrayada', sans-serif;
-}
-
-.cdnDemo3 {
-    font-family: 'Vesper Libre', serif;
+nav ul { /*KEEP*/
+    margin: 0;
+    /*padding: 0;*/
 }
 
 /*#region Images*/
@@ -199,66 +117,38 @@ nav ul li a {
     (put it on a div)
 */
 
-ul li {
-    list-style-image: url(../Images/bullet_point_image_teal.png);
-}
 
-aside ul li {
-    list-style-image: url(../Images/bullet_point_image_orange.png);
-}
 
 /*Background Images*/
-header {
+/*header {        
     background-image: url('../images/ford trucks on lifts.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 /*positioning a single image through CSS*/
-#headerOverlay {
-    background-image: url(../Images/computer_icon.png);
-    background-repeat: no-repeat;
+
+ /*TODO insert new photo 
+     background-repeat: no-repeat;
     background-size: 90px;
-    background-position: 3% center; /*horizontal vertical*/
-    padding: 3em;
-}
+    background-position: 3% center; /*horizontal vertical*/*/
+   
 
-header h1, header p {
-    margin: 7px 0 7px 150px;
-    /*This clears the text of the bg image are*/
-}
-#headerOverlay {
-    background-image: url(../Image) /*TODO insert new photo*/
-    background-repeat: no-repeat;
-    background-size: 90px;
-    background-position: 3% center; /*horizontal vertical*/
-    padding: 3em;
-}
 
-header h1 {
-    text-align: left;
-    letter-spacing: 0.1em;
-    color: #262626;
-}
 
-header {
-    border-radius: 5px;
-}
+/*header h1 p {
+    font-size: 5px;
+}*/
 
-/*background image for the entire page*/
-body {
-    background: url(../Images/ben-krygsman-745458-unsplash.jpg) no-repeat center center fixed;
-    background-size: cover;
-    margin: 0; /*margin removes the browsers margin that it presuposses on there*/
-}
+
 
 /*This is a super sweet border that you may want to comment out later*/
-nav ul {
+/*nav ul {
     min-height: 52px;
     background-image: url(../Images/border_wave.png);
     background-repeat: repeat-x;
     background-position: bottom;
     background-size: 200px;
-}
+}*/
 
 /*endregion*/
 
@@ -299,42 +189,57 @@ div.galleryItem {
 }
 
 
-    div.galleryItem:hover {
-        border: 1px solid lightsalmon;
+    div.galleryItem:hover { /*KEEP*/
+        border: 1px solid #FFF;
     }
 
-    div.galleryItem img {
-        width: 100%;
+    div.galleryItem img {   /*KEEP*/
+        width: 50%;
         height: auto;
     }
 
     div.galleryItem a:hover {
-        background-color: lightsalmon;
+        background-color: #FFF;
     }
 
 #imageGallery {
     margin: 0 auto; /*0 margin for top and bottom and then automaticly figure out the margin for L and R so that this is CENTER - this centers the elemet with the id of imageGallery */
     width: 85%;
-    text-align: center; /*this centers the content inside the element with the id of imageGalley*/
+    text-align: center; /*this centers the content inside the element with the id of imageGallery*/
 }
 
 .mainWrapper {
     padding: 1%;
 }
+/*For CSS.html - 2 column layout with both columns floated - because both columns are floated we do NOT want the parent element to collapse so we have to add in a clear (line in the sand)*/
 
-footer {
-    padding: 3%
+#cssLeftColumn {
+    width: 75%; /*if we are floating it to the left or right it has to be less than 100%*/
+    float: left;
+    border-right: 1px dashed #262626;
+    box-sizing: border-box;
+    /*this changes the way width and height are figured. With border-box you are saying that the 73% width includes not only content but also padding and border*/
 }
 
-
-nav ul {
-    margin: 0;
-    padding: 0;
+#cssRightColumn { /*I made a mistake here initially becaues i put cssLeftColumn instead of cssRightColumn. This cause the css.html page to switch the content that was supposed to be on the left to on the right and vice versa.*/
+    width: 25%;
+    float: right;
 }
 
+.clear {
+    clear: both; /*a clear has to be put inside the PARENT*/
+}
+''
 
+
+
+
+/*This is for Team.html column right */
 aside h2 {
     padding: 2%;
+}
+aside h2 {
+    margin-top: 0;
 }
 
 /*endregion*/
@@ -390,9 +295,6 @@ aside h2 {
     float: right;
 }
 
-aside h2 {
-    margin-top: 0;
-}
 
 /*for HTML.html - 2 column layout with 1 column floated and margin to clear the space for the content*/
 
@@ -406,22 +308,4 @@ aside h2 {
     float: right;
 }
 
-/*For CSS.html - 2 column layout with both columns floated - because both columns are floated we do NOT want the parent element to collapse so we have to add in a clear (line in the sand)*/
-
-#cssLeftColumn {
-    width: 75%; /*if we are floating it to the left or right it has to be less than 100%*/
-    float: left;
-    border-right: 1px dashed #262626;
-    box-sizing: border-box;
-    /*this changes the way width and height are figured. With border-box you are saying that the 73% width includes not only content but also padding and border*/
-}
-
-#cssRightColumn { /*I made a mistake here initially becaues i put cssLeftColumn instead of cssRightColumn. This cause the css.html page to switch the content that was supposed to be on the left to on the right and vice versa.*/
-    width: 25%;
-    float: right;
-}
-
-.clear {
-    clear: both; /*a clear has to be put inside the PARENT*/
-}
 /*#endregion*/
