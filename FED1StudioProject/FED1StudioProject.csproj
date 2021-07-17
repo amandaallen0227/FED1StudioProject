@@ -76,9 +76,14 @@
     <Content Include="images\android-chrome-192x192.png" />
     <Content Include="images\android-chrome-512x512.png" />
     <Content Include="images\apple-touch-icon.png" />
+    <Content Include="images\baldblackguy.jpg" />
+    <Content Include="images\balddude.jpg" />
     <Content Include="images\barista about to tamp.jpg" />
     <Content Include="images\barista tamping.jpg" />
+    <Content Include="images\blackguy.jpg" />
     <Content Include="images\blind basket with entire espresso machine.jpg" />
+    <Content Include="images\blondedude.jpg" />
+    <Content Include="images\blondegirl.jpg" />
     <Content Include="images\Chemex.jpg" />
     <Content Include="images\coffe fruit more.jpg" />
     <Content Include="images\coffee fruit.jpg" />
@@ -92,6 +97,7 @@
     <Content Include="images\favicon.ico" />
     <Content Include="images\female barista.jpg" />
     <Content Include="images\flavory wheel.jpg" />
+    <Content Include="images\fundarkhairgirl.jpg" />
     <Content Include="images\outside coffee shop corner.jpg" />
     <Content Include="images\roaster.jpg" />
     <Content Include="images\roaster2.jpg" />
