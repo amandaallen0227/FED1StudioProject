@@ -130,7 +130,7 @@ div.galleryItem {
 #imageGallery {
     margin: 0 auto; /*0 margin for top and bottom and then automaticly figure out the margin for L and R so that this is CENTER - this centers the elemet with the id of imageGallery */
     width: 85%;
-    text-align: center; /*this centers the content inside the element with the id of imageGalley*/
+    text-align: left; /*this centers the content inside the element with the id of imageGalley*/
 }
 
 .mainWrapper {
@@ -235,3 +235,39 @@ aside h2 {
 }
 
 /*#endregion*/
+
+table, tr, td, th {
+    border: 1px solid black;
+    border-collapse: collapse /*this avoids duplicate adjacent borders inside of a table.*/
+}
+
+
+table {
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+th {
+    font-weight: bold;
+    text-align: center;
+}
+
+td, th {
+    padding: .3em;
+}
+
+thead {
+    background-color: #96F3FA;
+}
+
+tfoot {
+    background-color: teal;
+}
+
+    tfoot tr, tfoot td {
+        border: 0;
+    }
+
+tbody tr:nth-child(even) { /*this is how you can specify */
+    background-color: lightsalmon;
+}
