@@ -14,6 +14,14 @@ body { /*KEEP*/
     background-size: cover;*/
     margin: 1%; /*margin removes the browsers margin that it presuposses on there*/
 }
+
+/*background image for the entire page*/
+body {
+    background: url('/images/coffeeshopbigfile.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 5%; /*margin removes the browsers margin that it presuposses on there*/
+    padding: 2%;
+}
 /* Colors for this project:
     #262626
     #F2E2CE
@@ -22,21 +30,22 @@ body { /*KEEP*/
    FONTS:
     font-family: 'Bookman Old Style';
 */
-.box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
+
+#femaleBarista {
+    float: left;
+    height: 301px;
+    margin-left: 21px;
+    margin-top: 21px;
+    margin-right: 21px;
 }
-#headerOverlay {    
+
+#headerOverlay {
     background-image: url('images/waterdropblackjennasedit.png');
     background-repeat: no-repeat;
-    background-size: 90px;
-    background-position: 3% center;
+    background-size: 100px;
+    background-position: 3% 64%;
     padding: 3em;
+
 }
 header { /*KEEP*/
     background-color: #F2E2CE;
@@ -46,35 +55,51 @@ header { /*KEEP*/
 
 header h1 { /*KEEP*/
     letter-spacing: 0.1em;
-    color: #262626;
+    color: #000;
     margin: 7px 0 7px 69px;
     font-size: 99px;
     font-family: 'Bookman Old Style';
         /*This clears the text of the bg image are*/
 }
-    header p {
-        letter-spacing: 1px;
-        margin: -19px 0 0px 72px;
-        font-size: 15px;
-    }
+
+header p {
+    letter-spacing: 1px;
+    margin: -19px 0 0px 72px;
+    font-size: 15px;
+}
 
 h1 p {
     display: block;
+    font-family: Arial,Helvetica,sans-serif;
 }
 
 p {
     font-family: Arial,Helvetica,sans-serif; 
 }
+section h1 {
+    color: #262626;
+    font-family: 'Bookman Old Style';
+}
 
-
-
+/*Centering classes.html*/
+section article h2 {
+    text-align: center;
+}
+h2 {
+    color: #262626;
+    font-family: 'Bookman Old Style';
+    margin: 0;
+}
 
 main { /*KEEP*/
     background-color: antiquewhite;
 }
 
-main section article h2 { /*KEEP*/
-        font-size: 37px;
+/*index why choose us*/
+main section article h2 {
+    font-size: 37px;
+    padding-top: 60px;
+    margin-bottom: 11px;
 }
 
 
@@ -88,12 +113,6 @@ footer { /*KEEP*/
 }
 
 
-ul.blockList a:hover { /*KEEP*/
-    background-color: #262626;
-    color: #F2E2CE;
-}
-
-
 
 /*below affects color of display for links in contact*/
 a {
@@ -101,6 +120,12 @@ a {
     text-decoration: none;
     color: #262626;
 }
+
+ul.blockList a:hover { /*KEEP*/
+    background-color: #262626;
+    color: antiquewhite;
+}
+
     /*below is affecting links on contact page*/
     a:hover, a:active, a:focus { /*KEEP*/
         color: #262626;
@@ -110,7 +135,10 @@ a {
     }
 
 nav ul {
-    background-color: white; /*KEEP b/c we are making the nav bar white instead of the browser choosing the background to be white for us.*/
+    margin: 0px 0px 0px -175px;
+    padding-left: 200px;
+    word-spacing: 35px;
+    background-color: transparent; /*KEEP b/c we are making the nav bar white instead of the browser choosing the background to be white for us.*/
 }
 
     nav ul li { /*KEEP*/
@@ -120,14 +148,11 @@ nav ul {
         nav ul li a { /*KEEP*/
             padding: .5em;
             display: block;
-            color: #262626;
+            color: #fff;
             word-spacing: 1px;
+            font-family: Arial,Helvetica,sans-serif;
         }
 
-nav ul { /*KEEP*/
-    margin: 0;
-    padding-left: 200px;
-}
 
 
 /*TODO insert new photo 
@@ -147,8 +172,8 @@ div.galleryItem:hover {
 }
 
 div.galleryItem img {
-    width: 100%;
-    height: auto;
+    width: 32%;
+    
 }
 
 div.galleryItem a:hover {
@@ -211,35 +236,19 @@ aside h2 {
     Clears only clear the container they are placed in.
 */
 
-#html, #js {
-    float: right;
-    height: 75px;
-    margin-left: 20px;
-}
 
-#css {
-    float: left;
-    height: 75px;
-    margin-right: 20px;
-}
 
 #frontendDev section {
     width: 85%;
     margin: 0 auto;
 }
 
-    #frontendDev section h2 {
+#frontendDev section h2 {
         margin: 10px 75px;
-    }
+}
 
-    #frontendDev section p {
+#frontendDev section p {
         margin: 0 75px;
-    }
-
-/* For the index.html -2 column layout where 1 column is floated*/
-#leftColumn {
-    width: 73%;
-    border-right: 1px dashed #262626;
 }
 
 #rightColumn {
@@ -248,7 +257,10 @@ aside h2 {
 }
 
 
-/*for HTML.html - 2 column layout with 1 column floated and margin to clear the space for the content*/
+
+
+
+/*Likely for Team.html - 2 column layout with 1 column floated and margin to clear the space for the content*/
 
 #htmlLeftColumn {
     margin-right: 25%;
@@ -260,8 +272,8 @@ aside h2 {
     float: right;
 }
 
-/*#endregion*/
 
+/*For table in classes.html*/
 table, tr, td, th {
     border: 1px solid black;
     border-collapse: collapse /*this avoids duplicate adjacent borders inside of a table.*/
@@ -290,9 +302,9 @@ tfoot {
     background-color: teal;
 }
 
-    tfoot tr, tfoot td {
+tfoot tr, tfoot td {
         border: 0;
-    }
+}
 
 tbody tr:nth-child(even) { /*this is how you can specify */
     background-color: lightsalmon;
