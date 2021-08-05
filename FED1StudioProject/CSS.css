@@ -19,45 +19,70 @@ body { /*KEEP*/
     #F2E2CE
     lightgrey
     antiquewhite
+   FONTS:
+    font-family: 'Bookman Old Style';
 */
-
-
-header {        /*KEEP*/
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+#headerOverlay {    
+    background-image: url('images/waterdropblackjennasedit.png');
+    background-repeat: no-repeat;
+    background-size: 90px;
+    background-position: 3% center;
+    padding: 3em;
+}
+header { /*KEEP*/
     background-color: #F2E2CE;
-    font: 70px; 
+    font: 70px;
 }
 
 
-    header h1 { /*KEEP*/
-        letter-spacing: 0.1em;
-        color: #262626;
-        margin: 7px 0 7px 150px;
-        font-size: 99px;
+header h1 { /*KEEP*/
+    letter-spacing: 0.1em;
+    color: #262626;
+    margin: 7px 0 7px 69px;
+    font-size: 99px;
+    font-family: 'Bookman Old Style';
         /*This clears the text of the bg image are*/
+}
+    header p {
+        letter-spacing: 1px;
+        margin: -19px 0 0px 72px;
+        font-size: 15px;
     }
+
 h1 p {
     display: block;
 }
 
+p {
+    font-family: Arial,Helvetica,sans-serif; 
+}
 
-    header p {
-        letter-spacing: 1px;
-        margin: -19px 0 0px 160px;
-        font-size: 19px;
-    }
 
-main{  /*KEEP*/
+
+
+main { /*KEEP*/
     background-color: antiquewhite;
 }
-    main section article h2 { /*KEEP*/
+
+main section article h2 { /*KEEP*/
         font-size: 37px;
-    }
+}
 
 
-footer {    /*KEEP*/
+footer { /*KEEP*/
     background-color: #262626;
     color: white;
 }
+
 footer { /*KEEP*/
     padding: 1%
 }
@@ -77,36 +102,38 @@ a {
     color: #262626;
 }
     /*below is affecting links on contact page*/
-  a:hover, a:active, a:focus { /*KEEP*/
+    a:hover, a:active, a:focus { /*KEEP*/
         color: #262626;
         text-decoration: none;
         background-color: lightgrey;
         font-weight: bold;
     }
+
 nav ul {
     background-color: white; /*KEEP b/c we are making the nav bar white instead of the browser choosing the background to be white for us.*/
 }
-nav ul li {    /*KEEP*/
-    display: inline-block;
-    
-}
-    nav ul li a { /*KEEP*/
-        padding: .5em;
-        display: block;
-        color: #262626;
-        word-spacing: 1px;
+
+    nav ul li { /*KEEP*/
+        display: inline-block;
     }
+
+        nav ul li a { /*KEEP*/
+            padding: .5em;
+            display: block;
+            color: #262626;
+            word-spacing: 1px;
+        }
 
 nav ul { /*KEEP*/
     margin: 0;
-    padding-left: 200px; 
+    padding-left: 200px;
 }
 
 
- /*TODO insert new photo 
+/*TODO insert new photo 
      background-repeat: no-repeat;
     background-size: 90px;
-    background-position: 3% center; /*horizontal vertical*/*/
+    background-position: 3% center; /*horizontal vertical*/ */
 
 div.galleryItem {
     margin: 5px;
@@ -114,18 +141,19 @@ div.galleryItem {
     display: inline-block; /*this is the line of code that allows the divs to line up next to each other*/
     width: 350px; /*applies just to the content does not apply to padding and margin*/
 }
-    div.galleryItem:hover {
-        border: 1px solid lightsalmon;
-    }
 
-    div.galleryItem img {
-        width: 100%;
-        height: auto;
-    }
+div.galleryItem:hover {
+    border: 1px solid lightsalmon;
+}
 
-    div.galleryItem a:hover {
-        background-color: lightsalmon;
-    }
+div.galleryItem img {
+    width: 100%;
+    height: auto;
+}
+
+div.galleryItem a:hover {
+    background-color: lightsalmon;
+}
 
 #imageGallery {
     margin: 0 auto; /*0 margin for top and bottom and then automaticly figure out the margin for L and R so that this is CENTER - this centers the elemet with the id of imageGallery */
@@ -157,19 +185,17 @@ div.galleryItem {
 }
 
 
-
-
-
 /*This is for Team.html column right */
-aside h2 {
+aside h1 {
     padding: 2%;
-}
-aside h2 {
     margin-top: 0;
+    font-size: 32px;
 }
 
-/*endregion*/
 
+aside h2 {   
+    font-size: 25px;
+}
 
 
 /*#region Float & Clear*/
