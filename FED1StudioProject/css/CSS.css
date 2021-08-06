@@ -30,27 +30,31 @@ body {
    FONTS:
     font-family: 'Bookman Old Style';
 */
-#baldman {
-    margin-bottom: 0px;
-    margin-top: 59px;
-    margin-left: -199px;
+
+#classSub {
+    margin: 1%;
+    width: auto;
+    text-align: center;
+    color: antiquewhite;
 }
+
+
+
 #chemexPour {
     float: right;
-    height: 248px;
-    margin-left: -25px;
-    margin-top: 5px;
-    margin-right: -4px;
-    clear: right;
-    
+    height: 257px;
+    margin-left: 9%;
+    margin-top: 0%;
+    margin-right: 26.5%;
+   
 }
 
 #baristaTamp {
     float: left;
     height: 248px;
-    margin-left: -25px;
-    margin-top: 5px;
-    margin-right: 34px;
+    margin-left: 8%;
+    margin-top: 0%;
+    margin-right: 2%;
 }
 
 
@@ -63,7 +67,7 @@ body {
 }
 
 #headerOverlay {
-    background-image: url('images/waterdropblackjennasedit.png');
+    background-image: url(.../images/waterdropblackjennasedit.png);
     background-repeat: no-repeat;
     background-size: 100px;
     background-position: 3% 64%;
@@ -74,7 +78,10 @@ header { /*KEEP*/
     background-color: #F2E2CE;
     font: 70px;
 }
-
+#indexTitle {
+    font-family: 'Bookman Old Style';
+    font-size: 25px;
+}
 
     header h1 { /*KEEP*/
         letter-spacing: 0.1em;
@@ -98,12 +105,13 @@ h1 p {
 
 p {
     font-family: Arial,Helvetica,sans-serif;
+    margin: 1% 0% 22% 0%;
 }
 
 section h1 {
     color: #262626;
     font-family: 'Bookman Old Style';
-    margin-bottom: -1px;
+  
 }
 
 /*Centering classes.html*/
@@ -119,16 +127,26 @@ h2 {
 
 main { /*KEEP*/
     background-color: antiquewhite;
-    padding: 3px 0px 0px 0px;
+    padding: 0% 4% 8% 4%;
+    margin: 1%, 7%;
 }
 
     /*index why choose us*/
 main section article h2 {
-        font-size: 37px;
-        padding-top: 160px;
-        margin-bottom: 11px;
+        font-size: 37px;    
+        margin-bottom: 12px;
+        margin-top: -10px;
 }
 
+/*Team Nav*/
+main aside h1 {
+    font-family: 'Bookman Old Style';
+    font-size: 35px;
+}
+aside ul li {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 25px;
+}
  main h2 {
         display: flex;
         justify-content: center;
@@ -145,7 +163,9 @@ main section article h2 {
     }
 
 footer { /*KEEP*/
-    padding: 1%
+    padding: 1%;
+    margin-top: 2%;
+
 }
 
 
@@ -187,6 +207,7 @@ nav ul {
             color: #fff;
             word-spacing: 1px;
             font-family: Arial,Helvetica,sans-serif;
+            font-size: 18px;
         }
 
 
@@ -204,7 +225,7 @@ div.galleryItem {
 }
 
 div.galleryItem:hover {
-    border: 1px solid lightsalmon;
+    border: 1px solid white;
 }
 
 div.galleryItem img {
@@ -217,8 +238,8 @@ div.galleryItem a:hover {
 
 #imageGallery {
     margin: 0 auto; /*0 margin for top and bottom and then automaticly figure out the margin for L and R so that this is CENTER - this centers the elemet with the id of imageGallery */
-    width: 85%;
-    text-align: left; /*this centers the content inside the element with the id of imageGalley*/
+    width: 83%;
+    text-align: center; /*this centers the content inside the element with the id of imageGalley*/
 }
 
 .mainWrapper {
@@ -252,27 +273,24 @@ aside h1 {
     font-size: 32px;
 }
 
+section aside div p {
+    font-family: Arial,Helvetica,sans-serif;
+}
 
 aside h2 {
     font-size: 25px;
 }
 
-
-/*#region Float & Clear*/
-/*
-    Floar & Clear Notes
-
-    Floating an element in HTML is when you move it to the left or right of its parenting container.
-
-    Floating an element can cause the parenting container to collapse because the element is not longer contributing to its height.
-
-    You can use clears to force parenting containers to maintain their height and ensure that content from below does NOT flow up beside the floated element. (Clear is the line in the sand)
-    
-    Clears only clear the container they are placed in.
-*/
+    aside h2 i {
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+    }
 
 
-
+#ourStory {
+    margin: 53px 75px;
+}
 #frontendDev section {
     width: 86%;
     margin: 31px 0px 0px 37px;
@@ -282,18 +300,11 @@ aside h2 {
         margin: 10px 75px;
     }
 
-    #frontendDev section p {
-        margin: 0 75px;
-    }
 
 #rightColumn {
     width: 25%;
     float: right;
 }
-
-
-
-
 
 /*Likely for Team.html - 2 column layout with 1 column floated and margin to clear the space for the content*/
 
@@ -308,7 +319,7 @@ aside h2 {
 }
 
 
-/*For table in classes.html*/
+/*TABLE in Classes.html*/
 table, tr, td, th {
     border: 2px solid black;
     background-color: lightgray;
@@ -349,6 +360,3 @@ tfoot {
         border: 0;
     }
 
-tbody tr:nth-child(even) { /*this is how you can specify */
-    background-color: lightsalmon;
-}

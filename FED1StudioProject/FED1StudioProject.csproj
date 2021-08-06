@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\bootstrap.icons.css" />
     <Content Include="Classes.html" />
     <Content Include="Contact.html" />
     <Content Include="css\different-theme.css" />
@@ -112,6 +113,7 @@
     <Content Include="images\fundarkhairgirl.jpg" />
     <Content Include="images\man with glasses.png" />
     <Content Include="images\outside coffee shop corner.jpg" />
+    <Content Include="images\redhairgalNEW.png" />
     <Content Include="images\redheadseriouswoman.png" />
     <Content Include="images\roaster.jpg" />
     <Content Include="images\roaster2.jpg" />

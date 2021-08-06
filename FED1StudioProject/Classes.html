@@ -10,6 +10,8 @@
     <link href="css/CSS.css" rel="stylesheet" />
     <link href="CSS.css" rel="stylesheet" />
     <link href="stylesheets/CSS.css" rel="stylesheet" />
+    <link href="css/bootstrap.icons.css" rel="stylesheet" />
+    <link href="css/bootstrap.icons.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -24,69 +26,90 @@
         </div>
     </header>
     <nav>
-        <ul>
-            <li>
-                <a href="index.html"> Home</a>
-            </li>
-            <li>
-                <a href="Classes.html">Classes</a>
-            </li>
-            <li>
-                <a href="Team.html">Team</a>
-            </li>
-            <li>
-                <a href="Contact.html">Contact</a>
-            </li>
+        <ul id="nav-list" class="topnav">
+            <li> <a href="index.html">Home</a> </li>
+            <li class="active"> <a href="Classes.html">Classes</a> </liclass="active">
+            <li> <a href="Team.html">Team</a> </li>
+            <li><a href="Contact.html">Contact</a> </li>
         </ul>
     </nav>
     <main>
-        <section>
-            <h2> CLASSES</h2>
-            <div class="mainWrapper">
-                <div class="galleryItem">
-                    <img src="images/coffeeGrind.png" target="_blank" alt="Espresso Grinder collecting grounds into portafilter" id="coffeeGrinder" width="400" height="200" />          <h3>- Grind + Water -</h3>
-                    <p> grinding espresso is a critical element to the cadence of brewing coffee. Whether it is brewed coffee, espresso, chemex, or your home coffee maker: grind matters!</p>
-                </div>
+        <section class="mainWrapper">
+            <article id="classSub">
+                <h2 id="mainHeader"> CLASS SUBJECTS</h2>
+                    <div>
+                        <div class="galleryItem">
+                            <a href="#grindWater">
+                                <img src="images/coffeeGrind.png" target="_blank" alt="Espresso Grinder collecting grounds into portafilter" id="coffeeGrinder" width="400" height="200" />
+                                <h3>- Grind + Water -</h3>
+                            </a>
+                            <div>
+                                grinding espresso is a critical element to the cadence of brewing coffee. Whether it is brewed coffee, espresso, chemex, or your home coffee maker: grind matters! <br />
+                            </div>
 
-                <div class="galleryItem">
-                    <img src="images/second espresso machine image.jpg" target="_blank" alt="Clean front of espresso machine" id="espressoMachine" width="400" height="200" />
+                        </div>
 
-                    <h3>- Everything you need to know about an Espresso Machine -</h3>
-                    <p> An espresso machine is a complex machine. For the common barista it is the main tool they use to serve their customers. We have offerings at 3 levels to become an expert on servicing your own machine!</p>
-                </div>
+                        <div class="galleryItem">
+                            <a href="#espressoMachine ">
+                                <img src="images/second espresso machine image.jpg" target="_blank" alt="Clean front of espresso machine" id="espressoMachine" width="400" height="200" />
+                                <h3>- Everything you need to know about an Espresso Machine -</h3>
+                            </a>
+                            <div>An espresso machine is a complex machine. For the common barista it is the main tool they use to serve their customers. We have offerings at 3 levels to become an expert on servicing your own machine! <br/> 
+                            </div>
+                            
+                        </div>
 
-                <div class="galleryItem">
-                    <img src="images/espresso from blind basket.jpg" target="_blank" alt="The underside the portafilter revealing the blind basket" id="blindBasket" width="400" height="200" />
+                        <div class="galleryItem">
+                            <a href="#espresso">
+                                <img src="images/espresso from blind basket.jpg" target="_blank" alt="The underside the portafilter revealing the blind basket" id="blindBasket" width="400" height="200" />
 
-                    <h3> - All things espresso -</h3>
-                    <p> Espresso can be a little touchy. One wrong move and you've messed up your shot! Come learn from the best all the ways to improve your pull.</p>
-                </div>
+                                <h3> - All things espresso -</h3>
+                            </a>
+                            <div>Espresso can be a little touchy. One wrong move and you've messed up your shot! Come learn from the best all the ways to improve your pull.<br/>
+                            </div>
 
-                <div class="galleryItem">
-                    <img src="images/coffee fruit.jpg" target="_blank" alt="Fruit vine that coffee bean is incase in" id="coffeBeanFruit" width="400" height="200" />
+                        </div>
+                    </div>
 
-                    <h3>- Where Coffee Comes From -</h3>
-                    <p> Did you know the only places that coffee beans grow is around the equator? This is where it all starts. If this piece of the process goes wrong it will affect the coffee bean all the way through</p>
-                </div>
+                    <div>
+                        <div class="galleryItem">
+                            <a href="#whereCoffee ">
+                                <img src="images/coffee fruit.jpg" target="_blank" alt="Fruit vine that coffee bean is incase in" id="coffeBeanFruit" width="400" height="200" />
 
-                <div class="galleryItem">
-                    <img src="images/Chemex.jpg" target="_blank" alt="hot water poured into chemex to brew coffee beans" id="chemex" width="400" height="200" />
+                                <h3>- Where Coffee Comes From -</h3>
+                            </a>
+                            <div>
+                                Did you know the only places that coffee beans grow is around the equator? This is where it all starts. If this piece of the process goes wrong it will affect the coffee bean all the way through <br/>
+                            </div>
 
-                    <h3> - Brewed Coffee -</h3>
-                    <p> Drip coffee is the most popular coffee drink option in the world! It is simple yet complex.</p>
-                </div>
+                        </div>
 
-                <div class="galleryItem">
-                    <img src="images/roaster2.jpg" target="_blank" alt="Large coffee bean roaster churning beans" id="beanRoaster" width="400" height="200" />
+                        <div class="galleryItem">
+                            <a href="#brewedCoffee">
+                                <img src="images/Chemex.jpg" target="_blank" alt="hot water poured into chemex to brew coffee beans" id="chemex" width="400" height="200" />
 
-                    <h3> - Learn how to roast with high quality beans -</h3>
-                    <p> grinding espresso is a critical element to the cadence of brewing coffee. Whether it is brewed coffee, espresso, chemex, or your home coffee maker: grind matters!</p>
-                </div>
-            </div>
+                                <h3> - Brewed Coffee -</h3>
+                            </a>
+                            <div> Drip coffee is the most popular coffee drink option in the world! It is simple yet complex.<br/> 
+                            </div>
+                            
+                        </div>
+
+                        <div class="galleryItem">
+                            <a href="#roastingCoffee">
+                                <img src="images/roaster2.jpg" target="_blank" alt="Large coffee bean roaster churning beans" id="beanRoaster" width="400" height="200" />
+
+                                <h3> - Learn how to roast with high quality beans -</h3>
+                            </a>
+                            <div> grinding espresso is a critical element to the cadence of brewing coffee. Whether it is brewed coffee, espresso, chemex, or your home coffee maker: grind matters!<br/>
+                            </div>
+                           
+                        </div>
+                    </div>                
+            </article>
         </section>
-
         <!-- -------------Beginning of Table 1 -->
-        <table>
+        <table id="grindWater">
             <thead>
                 <tr>
                     <th colspan="4"> Grind + Water </th>
@@ -141,7 +164,7 @@
             </tfoot>
         </table>
         <!-- -------------End of Table 1-->
-        <table>
+        <table id="espressoMachine">
             <thead>
                 <tr>
                     <th colspan="4">Espresso Machine</th>
@@ -196,7 +219,7 @@
             </tfoot>
         </table>
         <!-- -------------End of Table 2-->
-        <table>
+        <table id="espresso">
             <thead>
                 <tr>
                     <th colspan="4">All things Espresso</th>
@@ -251,7 +274,7 @@
             </tfoot>
         </table>
         <!-- -------------End of Table 3-->
-        <table>
+        <table id="whereCoffee">
             <thead>
                 <tr>
                     <th colspan="4">Where Coffee Comes From</th>
@@ -306,7 +329,7 @@
             </tfoot>
         </table>
         <!-- -------------End of Table 4-->
-        <table>
+        <table id="brewedCoffee">
             <thead>
                 <tr>
                     <th colspan="4">Brewed Coffee</th>
@@ -361,7 +384,7 @@
             </tfoot>
         </table>
         <!-- -------------End of Table 5-->
-        <table>
+        <table id="roastingCoffee">
             <thead>
                 <tr>
                     <th colspan="4"> Roasting Coffee </th>
@@ -431,7 +454,7 @@
             <tbody>
                 <tr>
                     <td><i class="fa fa-html5" aria-hidden="true"></i> Beginner </td>
-                    <td>Uriah Powers </td>
+                    <td>Braden Cheadle </td>
                     <td>
                         <a> Monday + Tuesday (2 hours) </a>
                     </td>
@@ -449,7 +472,7 @@
 
                 <tr>
                     <td><i class="fa fa-css3" aria-hidden="true"></i> Advanced </td>
-                    <td> Talia Weber </td>
+                    <td> Matthew Davis </td>
                     <td>
                         <a>Friday + Saturday (2 hours) </a>
                     </td>
@@ -475,6 +498,24 @@
     <footer>
         &copy;Copyright 2021 Amanda Allen
     </footer>
+    <!-- Toggle Hamburger Menu Script -->
+    <script>
+        function toggleNav() {
+            let navList = document.getElementById('nav-list');
+            navList.classList.toggle('expanded');
+
+            //Toggle Hamburger button/Close button
+            let btnMenu = document.getElementById('menu-btn');
+
+            if (navList.classList.contains('expanded')) {
+                btnMenu.innerHTML = "&times;";
+            }
+            else {
+                btnMenu.innerHTML = "&#9776;";
+            }
+        }
+    </script>
+
 
 </body>
 </html>

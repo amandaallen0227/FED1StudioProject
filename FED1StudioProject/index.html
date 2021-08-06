@@ -11,33 +11,22 @@
     <link href="css/CSS.css" rel="stylesheet" />
     <link href="CSS.css" rel="stylesheet" />
     <link href="stylesheets/CSS.css" />
+    <link href="css/bootstrap.icons.css" rel="stylesheet" />
+
 </head>
 <body>
-    <header>
+    <header>    
         <div id="headerOverlay">
-            <h1>
-                BRIM
-            </h1>
-            <p>
-                Helping Others Fill Their Cup
-            </p>
+            <h1>BRIM</h1>
+            <p> Helping Others Fill Their Cup  </p>
         </div>
-
     </header>
     <nav>
-        <ul>
-            <li>
-                <a href="index.html"> Home</a>
-            </li>
-            <li>
-                <a href="Classes.html">Classes</a>
-            </li>
-            <li>
-                <a href="Team.html">Team</a>
-            </li>
-            <li>
-                <a href="Contact.html">Contact</a>
-            </li>
+        <ul id="nav-list" class="topnav">
+            <li class="active"> <a href="index.html">Home</a> </li>
+            <li> <a href="Classes.html">Classes</a> </li>
+            <li> <a href="Team.html">Team</a> </li>
+            <li><a href="Contact.html">Contact</a> </li>
         </ul>
     </nav>
     <main>
@@ -45,53 +34,60 @@
             <div>
                 <img src="images/baristagirl1.png" alt="female barista wearing an orange beanie behind the bar smiling" title="female barista smiling" id="femaleBarista" width="250" height="250" />
             </div>
-            <div class="content">
-                <h1> About Us</h1>
-                <p>
-                    BRIM provides high-quality training space and programs specifically for coffee professionals. Our roots are in the technical service world of specialty coffee, and we are uniquely equipped to provide you with the right solution for your professional development needs. At BRIM, you can learn, train, and entertain.
-                </p>
+            <div>
+                <section>
+                    <h1 > About Us</h1>
+                    <p>
+                        BRIM provides high-quality training space and programs specifically for coffee professionals.<br />
+                        Our roots are in the technical service world of specialty coffee, and we are uniquely equipped <br>
+                        to provide you with the right solution for your professional development needs. <br />
+                        At BRIM, you can learn, train, and entertain.
+                    </p>
+                </section>
             </div>
         </div>
         <section class="mainWrapper" id="leftColumn">
 
-            <article id="frontendDev">
+            <article >
 
-
-                <section>
-
+                <section id="frontendDev">
                     <h2>
                         Why Choose Us
-
                     </h2>
-
-                    <div>
+                    
                         <img src="images/barista about to tamp.jpg" alt="portafilter filled with ground coffee w/ a barista about to tamp" title="barista about to tamp" id="baristaTamp" />
                         <h1>
                             Our Story
                         </h1>
-
-                        <p>
+                        <p id="ourStory">
                             Brim was founded in 2008 and opened our very first brick and morte the summer of 2010. We believe that will high quality education and competative training methods we can produce the best baristas the world could offer. Our approach to instructing is hands-on; within the first day you will already have your hands the good stuff, coffee beans. We believe that when people and coffee come together something magical happens.
 
                         </p>
-
-                        <img src="images/Chemex.jpg" alt="Coffee being poured out of a Chemex" title="Chemex pour" id="chemexPour" width="382" height="300"/>
-
-                        <h1>
-                            Our Facility
-                        </h1>
-                        <p>
-                            Centrally located in downtown Tampa we have close to 16000square feet of training labs, large classroom spaces, and individual training rooms.
-                        </p>
-
-                    </div>
                 </section>
+                <section id="frontendDev">
+                    <img src="images/Chemex.jpg" alt="Coffee being poured out of a Chemex" title="Chemex pour" id="chemexPour" />
+
+                    <h1 id="ourFacility">
+                        Our Facility
+                    </h1>
+                    <p id="ourFacilityP">
+
+                        Centrally located in downtown Tampa we have close to 16000 square feet of training labs, large classroom spaces, and individual training rooms.
+                        <!--<br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>-->
+                    </p>
+                </section>
+
             </article>
         </section>
-
     </main>
     <footer>
         &copy;Copyright 2021 Amanda Allen
     </footer>
+
 </body>
 </html>
