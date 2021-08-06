@@ -6,6 +6,8 @@
     <meta name=" keywords" content="html, css, FED1, centriq" />
     <meta name=" author" content="Amanda Allen" />
     <title> BRIM | Classes </title>
+    <!-- CSS.css sheet -->
+    <link href="css/CSS.css" rel="stylesheet" />
     <link href="CSS.css" rel="stylesheet" />
     <link href="stylesheets/CSS.css" rel="stylesheet" />
 
@@ -38,132 +40,437 @@
         </ul>
     </nav>
     <main>
-        <section class="mainWrapper">
-            <article id="imageGallery">
-                <h2> CLASSES</h2>
-                <div> 
-                    <!-- TODO: finish content under each image + fix first image-->
-                    <div  class="galleryItem">
-                        <a href="images/second coffee grinder.jpg" target="_blank">
-                            <img src="images/second coffee grinder.jpg" alt="Espresso Grinder collecting grounds into portafilter" id="coffeeGrinder" width="400" height="200"
-                                 
-                           href="images/second espresso machine image.jpg" target="_blank">
-                            <img src="images/second espresso machine image.jpg" alt="Clean front of espresso machine" id="espressoMachine" width="400" height="200"
-                                 
-                            href="images/espresso from blind basket.jpg" target="_blank">
-                            <img src="images/espresso from blind basket.jpg" alt="The underside the portafilter revealing the blind basket" id="blindBasket" width="400" height="200"/>
-                                 
-                        </a>
-                        <div class="description"> - Everything you need to know about grinding espresso -  - Everything you need to know about an Espresso Machine - - Become a pro at all things espresso -</div>
-                    </div>                   
-                    <div class="galleryItem">
-                        <a href="images/coffee fruit.jpg" target="_blank">
-                            <img src="images/coffee fruit.jpg" alt="Fruit vine that coffee bean is incase in" id="coffeBeanFruit" width="400" height="200" 
-                             
-                           href="images/Chemex.jpg" target="_blank">
-                            <img src="images/Chemex.jpg" alt="hot water poured into chemex to brew coffee beans" id="chemex" width="400" height="200"
-                             
-                           href="images/roaster2.jpg" target="_blank">
-                            <img src="images/roaster2.jpg" alt="Large coffee bean roaster churning beans" id="beanRoaster"  width="400" height="200"   />
-                        </a>
-                        <div class="description"> - Learn from the source where are coffee comes from - - Brewed Coffee. Whats the fuss about? - - Learn how to roast with high quality beans - </div>
-                    </div>
+        <section>
+            <h2> CLASSES</h2>
+            <div class="mainWrapper">
+                <div class="galleryItem">
+                    <img src="images/coffeeGrind.png" target="_blank" alt="Espresso Grinder collecting grounds into portafilter" id="coffeeGrinder" width="400" height="200" />          <h3>- Grind + Water -</h3>
+                    <p> grinding espresso is a critical element to the cadence of brewing coffee. Whether it is brewed coffee, espresso, chemex, or your home coffee maker: grind matters!</p>
                 </div>
-               <div>
-                   <!-- TODO: rework the content inside to display required content  -->
-                    <table>
-                        <thead>
-                            <tr>
-                                <!--3 cells-->
-                                <th colspan="3">Our Monthly Offerings</th>
-                            </tr>
-                            <tr>
-                                <th>Skill</th>
-                                <th>Purpose</th>
-                                <th>Web Reference</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><i class="fa fa-html5" aria-hidden="true"></i> Foundations</td>
-                                <td>Learning The Foundational Pieces That Make Good Coffee </td>
-                                <td>
-                                    <a href="https://www.ncausa.org/about-coffee/10-steps-from-seed-to-cup">ncausa.org/about-coffee</a>
-                                </td>
-                            </tr>
 
-                            <tr>
-                                <td><i class="fa fa-bolt" aria-hidden="true"></i> Roasting </td>
-                                <td> A 4-Week, Hands On Instruction Course </td>
-                                <td>
-                                    <a href="https://www.baristainstitute.com/blog/sampo-latvakangas/may-2017/coffee-roasting-basics-developing-flavour-roasting">baristainstitute.com/blog</a>
-                                </td>
-                            </tr>
+                <div class="galleryItem">
+                    <img src="images/second espresso machine image.jpg" target="_blank" alt="Clean front of espresso machine" id="espressoMachine" width="400" height="200" />
 
-                            <tr>
-                                <td><i class="fa fa-css3" aria-hidden="true"></i> Espresso Machine Basics</td>
-                                <td> Intermediate Espresso Machine Tech Skills </td>
-                                <td>
-                                    <a href="https://www.espressoparts.com/blogs/barista-basics-tutorials/espresso-machine-parts">espressoparts.com/blogs</a>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><i class="fa fa-database" aria-hidden="true"></i> Grind + Espresso + Water</td>
-                                <td>A Course On the Keys To Pulling Perfect Espresso</td>
-                                <td>
-                                    <a href="https://clivecoffee.com/blogs/learn/how-to-make-great-espresso">clivecoffee.com/blog</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa fa-database" aria-hidden="true"></i> Brewed Coffee</td>
-                                <td>A Course That Gives The Student Every Way That Coffee Can Be Brewed</td>
-                                <td>
-                                    <a href="https://www.homegrounds.co/the-complete-guide-to-coffee-brewing-methods/"> homegrounds.co</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td colspan="2">Copyright &copy; CentriqTraining</td>
-                                <!-- The cell below merges two rows -->
-                                <td rowspan="2" style="text-align: right;">
-                                    <span class="bold italic">
-                                        All<br />Rights<br />Reserved
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <img src="../images/CentriqLogo.png" style="height: 25px" />
-                                </td>
-                            </tr>
-                        </tfoot>
-                    </table>
+                    <h3>- Everything you need to know about an Espresso Machine -</h3>
+                    <p> An espresso machine is a complex machine. For the common barista it is the main tool they use to serve their customers. We have offerings at 3 levels to become an expert on servicing your own machine!</p>
                 </div>
-                <p>
-                    Lorem ipsumdolor sit amet, consectetur adipiscingelit. Nunc maximus, nuIla ut commodo sagittis,sapienduimattisdui,nonpulvinarloremfelisneeeratLoremipsumdolorsitamet, consectetur adipiscingelit. Nuncmaximus, null aut commodo sagitt is, sapiendui mattisdui, nonpulvinarloremfelisneeerat.Aliquamegestas,velitatcondimentumplacerat,semsapien laoreet mauris, dictumporttitor lacusestnee enim. Vivamus feugiat elit lorem,eu porttitor
-                </p>
 
-                <p>
-                    Lorem ipsumdolor sit amet, consectetur adipiscingelit. Nunc maximus, nuIla ut commodo sagittis,sapienduimattisdui,nonpulvinarloremfelisneeeratLoremipsumdolorsitamet, consectetur adipiscingelit. Nuncmaximus, null aut commodo sagitt is, sapiendui mattisdui, nonpulvinarloremfelisneeerat.Aliquamegestas,velitatcondimentumplacerat,semsapien laoreet mauris, dictumporttitor lacusestnee enim. Vivamus feugiat elit lorem,eu porttitor
-                </p>
+                <div class="galleryItem">
+                    <img src="images/espresso from blind basket.jpg" target="_blank" alt="The underside the portafilter revealing the blind basket" id="blindBasket" width="400" height="200" />
 
-                <p>
-                    Lorem ipsumdolor sit amet, consectetur adipiscingelit. Nunc maximus, nuIla ut commodo sagittis,sapienduimattisdui,nonpulvinarloremfelisneeeratLoremipsumdolorsitamet, consectetur adipiscingelit. Nuncmaximus, null aut commodo sagitt is, sapiendui mattisdui, nonpulvinarloremfelisneeerat.Aliquamegestas,velitatcondimentumplacerat,semsapien laoreet mauris, dictumporttitor lacusestnee enim. Vivamus feugiat elit lorem,eu porttitor
-                </p>
+                    <h3> - All things espresso -</h3>
+                    <p> Espresso can be a little touchy. One wrong move and you've messed up your shot! Come learn from the best all the ways to improve your pull.</p>
+                </div>
 
-                <p>
-                    Lorem ipsumdolor sit amet, consectetur adipiscingelit. Nunc maximus, nuIla ut commodo sagittis,sapienduimattisdui,nonpulvinarloremfelisneeeratLoremipsumdolorsitamet, consectetur adipiscingelit. Nuncmaximus, null aut commodo sagitt is, sapiendui mattisdui, nonpulvinarloremfelisneeerat.Aliquamegestas,velitatcondimentumplacerat,semsapien laoreet mauris, dictumporttitor lacusestnee enim. Vivamus feugiat elit lorem,eu porttitor
-                </p>
+                <div class="galleryItem">
+                    <img src="images/coffee fruit.jpg" target="_blank" alt="Fruit vine that coffee bean is incase in" id="coffeBeanFruit" width="400" height="200" />
 
-                <p>
-                    Lorem ipsumdolor sit amet, consectetur adipiscingelit. Nunc maximus, nuIla ut commodo sagittis,sapienduimattisdui,nonpulvinarloremfelisneeeratLoremipsumdolorsitamet, consectetur adipiscingelit. Nuncmaximus, null aut commodo sagitt is, sapiendui mattisdui, nonpulvinarloremfelisneeerat.Aliquamegestas,velitatcondimentumplacerat,semsapien laoreet mauris, dictumporttitor lacusestnee enim. Vivamus feugiat elit lorem,eu porttitor
-                </p>
-                <!-- TODO build out content all classes -->
+                    <h3>- Where Coffee Comes From -</h3>
+                    <p> Did you know the only places that coffee beans grow is around the equator? This is where it all starts. If this piece of the process goes wrong it will affect the coffee bean all the way through</p>
+                </div>
 
-            </article>
+                <div class="galleryItem">
+                    <img src="images/Chemex.jpg" target="_blank" alt="hot water poured into chemex to brew coffee beans" id="chemex" width="400" height="200" />
+
+                    <h3> - Brewed Coffee -</h3>
+                    <p> Drip coffee is the most popular coffee drink option in the world! It is simple yet complex.</p>
+                </div>
+
+                <div class="galleryItem">
+                    <img src="images/roaster2.jpg" target="_blank" alt="Large coffee bean roaster churning beans" id="beanRoaster" width="400" height="200" />
+
+                    <h3> - Learn how to roast with high quality beans -</h3>
+                    <p> grinding espresso is a critical element to the cadence of brewing coffee. Whether it is brewed coffee, espresso, chemex, or your home coffee maker: grind matters!</p>
+                </div>
+            </div>
         </section>
+
+        <!-- -------------Beginning of Table 1 -->
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4"> Grind + Water </th>
+                </tr>
+                <tr>
+                    <th>Class</th>
+                    <th>Instructor</th>
+                    <th>Meets</th>
+                    <th>#</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="fa fa-html5" aria-hidden="true"></i> Beginner </td>
+                    <td>Keith Johnson </td>
+                    <td>
+                        <a> Monday + Tuesday (2 hours) </a>
+                    </td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-bolt" aria-hidden="true"></i> Intermediate </td>
+                    <td> Braden Cheadle </td>
+                    <td>
+                        <a> Wednesday + Thursday (2 hours) </a>
+                    </td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-css3" aria-hidden="true"></i> Advanced </td>
+                    <td> Rebecca Grasher </td>
+                    <td>
+                        <a>Friday + Saturday (2 hours) </a>
+                    </td>
+                    <td>3</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"></td>
+                    <!-- The cell below merges two rows -->
+                    <td rowspan="2" style="text-align: right;"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <img src="images/waterdropblackjennasedit.png" style="height: 25px" />
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <!-- -------------End of Table 1-->
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">Espresso Machine</th>
+                </tr>
+                <tr>
+                    <th>Class</th>
+                    <th>Instructor</th>
+                    <th>Meets</th>
+                    <th>#</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="fa fa-html5" aria-hidden="true"></i> Beginner </td>
+                    <td>Braden Cheadle </td>
+                    <td>
+                        <a> Monday + Tuesday (2 hours) </a>
+                    </td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-bolt" aria-hidden="true"></i> Intermediate </td>
+                    <td> Rebecca Grasher </td>
+                    <td>
+                        <a> Wednesday + Thursday (2 hours) </a>
+                    </td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-css3" aria-hidden="true"></i> Advanced </td>
+                    <td> Keith Johnson </td>
+                    <td>
+                        <a>Friday + Saturday (2 hours) </a>
+                    </td>
+                    <td>3</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"></td>
+                    <!-- The cell below merges two rows -->
+                    <td rowspan="2" style="text-align: right;"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <img src="images/waterdropblackjennasedit.png" style="height: 25px" />
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <!-- -------------End of Table 2-->
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">All things Espresso</th>
+                </tr>
+                <tr>
+                    <th>Class</th>
+                    <th>Instructor</th>
+                    <th>Meets</th>
+                    <th>#</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="fa fa-html5" aria-hidden="true"></i> Beginner </td>
+                    <td>Keith Johnson </td>
+                    <td>
+                        <a> Monday + Tuesday (2 hours) </a>
+                    </td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-bolt" aria-hidden="true"></i> Intermediate </td>
+                    <td> Braden Cheadle </td>
+                    <td>
+                        <a> Wednesday + Thursday (2 hours) </a>
+                    </td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-css3" aria-hidden="true"></i> Advanced </td>
+                    <td> Rebecca Grasher </td>
+                    <td>
+                        <a>Friday + Saturday (2 hours) </a>
+                    </td>
+                    <td>3</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"></td>
+                    <!-- The cell below merges two rows -->
+                    <td rowspan="2" style="text-align: right;"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <img src="images/waterdropblackjennasedit.png" style="height: 25px" />
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <!-- -------------End of Table 3-->
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">Where Coffee Comes From</th>
+                </tr>
+                <tr>
+                    <th>Class</th>
+                    <th>Instructor</th>
+                    <th>Meets</th>
+                    <th>#</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="fa fa-html5" aria-hidden="true"></i> Beginner </td>
+                    <td>Braden Cheadle </td>
+                    <td>
+                        <a> Monday + Tuesday (2 hours) </a>
+                    </td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-bolt" aria-hidden="true"></i> Intermediate </td>
+                    <td> Rebecca Grasher</td>
+                    <td>
+                        <a> Wednesday + Thursday (2 hours) </a>
+                    </td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-css3" aria-hidden="true"></i> Advanced </td>
+                    <td> Keith Johnson </td>
+                    <td>
+                        <a>Friday + Saturday (2 hours) </a>
+                    </td>
+                    <td>3</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"></td>
+                    <!-- The cell below merges two rows -->
+                    <td rowspan="2" style="text-align: right;"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <img src="images/waterdropblackjennasedit.png" style="height: 25px" />
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <!-- -------------End of Table 4-->
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">Brewed Coffee</th>
+                </tr>
+                <tr>
+                    <th>Class</th>
+                    <th>Instructor</th>
+                    <th>Meets</th>
+                    <th>#</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="fa fa-html5" aria-hidden="true"></i> Beginner </td>
+                    <td>Braden Cheadle </td>
+                    <td>
+                        <a> Monday + Tuesday (2 hours) </a>
+                    </td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-bolt" aria-hidden="true"></i> Intermediate </td>
+                    <td> Rebecca Grasher </td>
+                    <td>
+                        <a> Wednesday + Thursday (2 hours) </a>
+                    </td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-css3" aria-hidden="true"></i> Advanced </td>
+                    <td> Keith Johnson </td>
+                    <td>
+                        <a>Friday + Saturday (2 hours) </a>
+                    </td>
+                    <td>3</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"></td>
+                    <!-- The cell below merges two rows -->
+                    <td rowspan="2" style="text-align: right;"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <img src="images/waterdropblackjennasedit.png" style="height: 25px" />
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <!-- -------------End of Table 5-->
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4"> Roasting Coffee </th>
+                </tr>
+                <tr>
+                    <th>Class</th>
+                    <th>Instructor</th>
+                    <th>Meets</th>
+                    <th>#</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="fa fa-html5" aria-hidden="true"></i> Beginner </td>
+                    <td>Keith Johnson </td>
+                    <td>
+                        <a> Monday + Tuesday (2 hours) </a>
+                    </td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-bolt" aria-hidden="true"></i> Intermediate </td>
+                    <td> Braden Cheadle </td>
+                    <td>
+                        <a> Wednesday + Thursday (2 hours) </a>
+                    </td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-css3" aria-hidden="true"></i> Advanced </td>
+                    <td> Rebecca Grasher </td>
+                    <td>
+                        <a>Friday + Saturday (2 hours) </a>
+                    </td>
+                    <td>3</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"></td>
+                    <!-- The cell below merges two rows -->
+                    <td rowspan="2" style="text-align: right;"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <img src="images/waterdropblackjennasedit.png" style="height: 25px" />
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <!-- -------------End of Table 6-->
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">Grind + Water + Espresso</th>
+                </tr>
+                <tr>
+                    <th>Class</th>
+                    <th>Instructor</th>
+                    <th>Meets</th>
+                    <th>#</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="fa fa-html5" aria-hidden="true"></i> Beginner </td>
+                    <td>Uriah Powers </td>
+                    <td>
+                        <a> Monday + Tuesday (2 hours) </a>
+                    </td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-bolt" aria-hidden="true"></i> Intermediate </td>
+                    <td> Andrew Best </td>
+                    <td>
+                        <a> Wednesday + Thursday (2 hours) </a>
+                    </td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-css3" aria-hidden="true"></i> Advanced </td>
+                    <td> Talia Weber </td>
+                    <td>
+                        <a>Friday + Saturday (2 hours) </a>
+                    </td>
+                    <td>3</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"></td>
+                    <!-- The cell below merges two rows -->
+                    <td rowspan="2" style="text-align: right;"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <img src="images/waterdropblackjennasedit.png" style="height: 25px" />
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <!-- -------------End of Table -->
     </main>
     <footer>
         &copy;Copyright 2021 Amanda Allen

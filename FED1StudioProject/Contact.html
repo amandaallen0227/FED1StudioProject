@@ -7,6 +7,8 @@
     <meta name=" keywords" content="html, css, FED1, centriq" />
     <meta name=" author" content="Amanda Allen" />
     <title> BRIM | Contact </title>
+    <!-- CSS.css sheet -->
+    <link href="css/CSS.css" rel="stylesheet" />
     <link href="CSS.css" rel="stylesheet" />
     <link href="stylesheets/CSS.css" rel="stylesheet" />
 </head>
@@ -19,7 +21,7 @@
             <p>
                 Helping Others Fill Their Cup
             </p>
-        </div>      
+        </div>
     </header>
     <nav>
         <ul>
@@ -31,22 +33,66 @@
     </nav>
     <main>
         <aside>
-            <h2> Please reach out, we'd love to hear from you!</h2>            
+            <h2> Please reach out, we'd love to hear from you!</h2>
+            <div class="row">
+                <form action="#" method="get" onssubmit="validateForm(event)"></form>
+                <div class="col-sm-offset-2 col-sm-8">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" id="tbName" name="name" class="form-control" placeholder="Name" />
+                            <span id="rfvName" class="invalid"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" id="tbEmail" name="email" class="form-control" placeholder="Email" />
+                            <span id="rfvEmail" class="invalid"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <input type="text" id="tbSubject" name="subject" class="form-control" placeholder="Subject" />
+                            <span id="rfvSubject" class="invalid"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <textarea id="tbMessage" name="message" class="form-control" placeholder="Message"></textarea>
+                            <span id="rfvMessage" class="invalid"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-success" value="Send Message" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <section>
                 <ul>
                     <li>Phone:(816) 857-5309</li>
-                    <li>Email:<a href="mailto:learning@smallbiz.com " subject="subject text">
-                        learning@smallbiz.com </a></li>
+                    <li>
+                        Email:<a href="mailto:learning@smallbiz.com " subject="subject text">
+                            learning@smallbiz.com
+                        </a>
+                    </li>
                     <li>Address: 1740 W 92nd Street, Kansas City, MO 64114</li>
                     <li>Twitter: <a href=" https.twitter.com/" target="_blank">@weteachstuff </a></li>
                     <li> Facebook: <a href="https.facebook.com/" target="_blank"> @www.facebook.com/learwithus</a></li>
                     <li>Linkedin:<a href="https.linkedin.com/" target="_blank"> www.linkedin.com/learnwithus</a></li>
                 </ul>
-                </section>                        
+            </section>
         </aside>
     </main>
     <footer>
         &copy;Copyright 2021 Amanda Allen
     </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- JS Validation Sheet -->
+    <script src="validation.js"></script>
+    <!-- Bootstrap 3.3.7 minified JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

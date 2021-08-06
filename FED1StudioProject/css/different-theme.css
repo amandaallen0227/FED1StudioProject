@@ -1,0 +1,307 @@
+﻿
+
+@import url('import.css');
+/*adobe theme colors:
+*/
+
+/*background image for the entire page*/
+body { /*KEEP*/
+    /*background: url(../Images/ben-krygsman-745458-unsplash.jpg) no-repeat center center fixed;
+    background-size: cover;*/
+    margin: 1%; /*margin removes the browsers margin that it presuposses on there*/
+}
+
+/*background image for the entire page*/
+body {
+    background: url('/images/coffeeshopbigfile.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 5%; /*margin removes the browsers margin that it presuposses on there*/
+    padding: 2%;
+}
+/* Colors for this project:
+    #262626
+    #F2E2CE
+    lightgrey
+    antiquewhite
+   FONTS:
+    font-family: 'Bookman Old Style';
+*/
+
+#femaleBarista {
+    float: left;
+    height: 301px;
+    margin-left: 21px;
+    margin-top: 21px;
+    margin-right: 21px;
+}
+
+#headerOverlay {
+    background-image: url('images/waterdropblackjennasedit.png');
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: 3% 64%;
+    padding: 3em;
+
+}
+header { /*KEEP*/
+    background-color: #F2E2CE;
+    font: 70px;
+}
+
+
+header h1 { /*KEEP*/
+    letter-spacing: 0.1em;
+    color: #000;
+    margin: 7px 0 7px 69px;
+    font-size: 99px;
+    font-family: 'Bookman Old Style';
+        /*This clears the text of the bg image are*/
+}
+
+header p {
+    letter-spacing: 1px;
+    margin: -19px 0 0px 72px;
+    font-size: 15px;
+}
+
+h1 p {
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+p {
+    font-family: Arial,Helvetica,sans-serif; 
+}
+section h1 {
+    color: #262626;
+    font-family: 'Bookman Old Style';
+}
+
+/*Centering classes.html*/
+section article h2 {
+    text-align: center;
+}
+h2 {
+    color: #262626;
+    font-family: 'Bookman Old Style';
+    margin: 0;
+}
+
+main { /*KEEP*/
+    background-color: antiquewhite;
+}
+
+/*index why choose us*/
+main section article h2 {
+    font-size: 37px;
+    padding-top: 60px;
+    margin-bottom: 11px;
+}
+
+
+footer { /*KEEP*/
+    background-color: #262626;
+    color: white;
+}
+
+footer { /*KEEP*/
+    padding: 1%
+}
+
+
+
+/*below affects color of display for links in contact*/
+a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: #262626;
+}
+
+ul.blockList a:hover { /*KEEP*/
+    background-color: #262626;
+    color: antiquewhite;
+}
+
+    /*below is affecting links on contact page*/
+    a:hover, a:active, a:focus { /*KEEP*/
+        color: #262626;
+        text-decoration: none;
+        background-color: lightgrey;
+        font-weight: bold;
+    }
+
+nav ul {
+    margin: 0px 0px 0px -175px;
+    padding-left: 200px;
+    word-spacing: 35px;
+    background-color: transparent; /*KEEP b/c we are making the nav bar white instead of the browser choosing the background to be white for us.*/
+}
+
+    nav ul li { /*KEEP*/
+        display: inline-block;
+    }
+
+        nav ul li a { /*KEEP*/
+            padding: .5em;
+            display: block;
+            color: #fff;
+            word-spacing: 1px;
+            font-family: Arial,Helvetica,sans-serif;
+        }
+
+
+
+/*TODO insert new photo 
+     background-repeat: no-repeat;
+    background-size: 90px;
+    background-position: 3% center; /*horizontal vertical*/ */
+
+div.galleryItem {
+    margin: 5px;
+    border: 1px solid#CCC;
+    display: inline-block; /*this is the line of code that allows the divs to line up next to each other*/
+    width: 350px; /*applies just to the content does not apply to padding and margin*/
+}
+
+div.galleryItem:hover {
+    border: 1px solid lightsalmon;
+}
+
+div.galleryItem img {
+    width: 32%;
+    
+}
+
+div.galleryItem a:hover {
+    background-color: lightsalmon;
+}
+
+#imageGallery {
+    margin: 0 auto; /*0 margin for top and bottom and then automaticly figure out the margin for L and R so that this is CENTER - this centers the elemet with the id of imageGallery */
+    width: 85%;
+    text-align: left; /*this centers the content inside the element with the id of imageGalley*/
+}
+
+.mainWrapper {
+    padding: 1%;
+}
+
+/*For CSS.html - 2 column layout with both columns floated - because both columns are floated we do NOT want the parent element to collapse so we have to add in a clear (line in the sand)*/
+
+#cssLeftColumn {
+    width: 75%; /*if we are floating it to the left or right it has to be less than 100%*/
+    float: left;
+    border-right: 1px dashed #262626;
+    box-sizing: border-box;
+    /*this changes the way width and height are figured. With border-box you are saying that the 73% width includes not only content but also padding and border*/
+}
+
+#cssRightColumn { /*I made a mistake here initially becaues i put cssLeftColumn instead of cssRightColumn. This cause the css.html page to switch the content that was supposed to be on the left to on the right and vice versa.*/
+    width: 25%;
+    float: right;
+}
+
+.clear {
+    clear: both; /*a clear has to be put inside the PARENT*/
+}
+
+
+/*This is for Team.html column right */
+aside h1 {
+    padding: 2%;
+    margin-top: 0;
+    font-size: 32px;
+}
+
+
+aside h2 {   
+    font-size: 25px;
+}
+
+
+/*#region Float & Clear*/
+/*
+    Floar & Clear Notes
+
+    Floating an element in HTML is when you move it to the left or right of its parenting container.
+
+    Floating an element can cause the parenting container to collapse because the element is not longer contributing to its height.
+
+    You can use clears to force parenting containers to maintain their height and ensure that content from below does NOT flow up beside the floated element. (Clear is the line in the sand)
+    
+    Clears only clear the container they are placed in.
+*/
+
+
+
+#frontendDev section {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#frontendDev section h2 {
+        margin: 10px 75px;
+}
+
+#frontendDev section p {
+        margin: 0 75px;
+}
+
+#rightColumn {
+    width: 25%;
+    float: right;
+}
+
+
+
+
+
+/*Likely for Team.html - 2 column layout with 1 column floated and margin to clear the space for the content*/
+
+#htmlLeftColumn {
+    margin-right: 25%;
+    border-right: 1px dashed #262626;
+}
+
+#htmlRightColumn {
+    width: 25%;
+    float: right;
+}
+
+
+/*For table in classes.html*/
+table, tr, td, th {
+    border: 1px solid black;
+    border-collapse: collapse /*this avoids duplicate adjacent borders inside of a table.*/
+}
+
+
+table {
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+th {
+    font-weight: bold;
+    text-align: center;
+}
+
+td, th {
+    padding: .3em;
+}
+
+thead {
+    background-color: #96F3FA;
+}
+
+tfoot {
+    background-color: teal;
+}
+
+tfoot tr, tfoot td {
+        border: 0;
+}
+
+tbody tr:nth-child(even) { /*this is how you can specify */
+    background-color: lightsalmon;
+}

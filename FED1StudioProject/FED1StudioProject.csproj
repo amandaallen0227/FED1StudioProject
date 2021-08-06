@@ -69,9 +69,10 @@
   <ItemGroup>
     <Content Include="Classes.html" />
     <Content Include="Contact.html" />
+    <Content Include="css\different-theme.css" />
     <Content Include="Favicon black and beige.html" />
     <Content Include="favicon.ico" />
-    <Content Include="CSS.css" />
+    <Content Include="css\CSS.css" />
     <Content Include="images\about.txt" />
     <Content Include="images\android-chrome-192x192.png" />
     <Content Include="images\android-chrome-512x512.png" />
@@ -95,6 +96,7 @@
     <Content Include="images\coffe fruit more.jpg" />
     <Content Include="images\coffee fruit.jpg" />
     <Content Include="images\coffee menu.jpg" />
+    <Content Include="images\coffeeGrind.png" />
     <Content Include="images\coffeeshopbigfile.jpg" />
     <Content Include="images\coffeeshoplilfile.jpg" />
     <Content Include="images\different roast coffee beans.jpg" />
@@ -119,6 +121,7 @@
     <Content Include="images\waterdropblackjennasedit.png" />
     <Content Include="Team.html" />
     <Content Include="index.html" />
+    <Content Include="validation.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

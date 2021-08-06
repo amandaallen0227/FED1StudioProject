@@ -30,6 +30,29 @@ body {
    FONTS:
     font-family: 'Bookman Old Style';
 */
+#baldman {
+    margin-bottom: 0px;
+    margin-top: 59px;
+    margin-left: -199px;
+}
+#chemexPour {
+    float: right;
+    height: 248px;
+    margin-left: -25px;
+    margin-top: 5px;
+    margin-right: -4px;
+    clear: right;
+    
+}
+
+#baristaTamp {
+    float: left;
+    height: 248px;
+    margin-left: -25px;
+    margin-top: 5px;
+    margin-right: 34px;
+}
+
 
 #femaleBarista {
     float: left;
@@ -44,29 +67,29 @@ body {
     background-repeat: no-repeat;
     background-size: 100px;
     background-position: 3% 64%;
-    padding: 3em;
-
+    padding: 1em;
 }
+
 header { /*KEEP*/
     background-color: #F2E2CE;
     font: 70px;
 }
 
 
-header h1 { /*KEEP*/
-    letter-spacing: 0.1em;
-    color: #000;
-    margin: 7px 0 7px 69px;
-    font-size: 99px;
-    font-family: 'Bookman Old Style';
+    header h1 { /*KEEP*/
+        letter-spacing: 0.1em;
+        color: #000;
+        margin: 7px 0 7px 69px;
+        font-size: 99px;
+        font-family: 'Bookman Old Style';
         /*This clears the text of the bg image are*/
-}
+    }
 
-header p {
-    letter-spacing: 1px;
-    margin: -19px 0 0px 72px;
-    font-size: 15px;
-}
+    header p {
+        letter-spacing: 1px;
+        margin: -19px 0 0px 72px;
+        font-size: 15px;
+    }
 
 h1 p {
     display: block;
@@ -74,17 +97,20 @@ h1 p {
 }
 
 p {
-    font-family: Arial,Helvetica,sans-serif; 
+    font-family: Arial,Helvetica,sans-serif;
 }
+
 section h1 {
     color: #262626;
     font-family: 'Bookman Old Style';
+    margin-bottom: -1px;
 }
 
 /*Centering classes.html*/
 section article h2 {
     text-align: center;
 }
+
 h2 {
     color: #262626;
     font-family: 'Bookman Old Style';
@@ -93,20 +119,30 @@ h2 {
 
 main { /*KEEP*/
     background-color: antiquewhite;
+    padding: 3px 0px 0px 0px;
 }
 
-/*index why choose us*/
+    /*index why choose us*/
 main section article h2 {
-    font-size: 37px;
-    padding-top: 60px;
-    margin-bottom: 11px;
+        font-size: 37px;
+        padding-top: 160px;
+        margin-bottom: 11px;
 }
 
+ main h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 6vh;
+        background: antiquewhite;
+ }
 
-footer { /*KEEP*/
-    background-color: #262626;
-    color: white;
-}
+
+
+    footer { /*KEEP*/
+        background-color: #262626;
+        color: white;
+    }
 
 footer { /*KEEP*/
     padding: 1%
@@ -126,17 +162,17 @@ ul.blockList a:hover { /*KEEP*/
     color: antiquewhite;
 }
 
-    /*below is affecting links on contact page*/
-    a:hover, a:active, a:focus { /*KEEP*/
-        color: #262626;
-        text-decoration: none;
-        background-color: lightgrey;
-        font-weight: bold;
-    }
+/*below is affecting links on contact page*/
+a:hover, a:active, a:focus { /*KEEP*/
+    color: #262626;
+    text-decoration: none;
+    background-color: lightgrey;
+    font-weight: bold;
+}
 
 nav ul {
     margin: 0px 0px 0px -175px;
-    padding-left: 200px;
+    padding: 0px 0px 0px 200px;
     word-spacing: 35px;
     background-color: transparent; /*KEEP b/c we are making the nav bar white instead of the browser choosing the background to be white for us.*/
 }
@@ -173,7 +209,6 @@ div.galleryItem:hover {
 
 div.galleryItem img {
     width: 32%;
-    
 }
 
 div.galleryItem a:hover {
@@ -218,7 +253,7 @@ aside h1 {
 }
 
 
-aside h2 {   
+aside h2 {
     font-size: 25px;
 }
 
@@ -239,17 +274,17 @@ aside h2 {
 
 
 #frontendDev section {
-    width: 85%;
-    margin: 0 auto;
+    width: 86%;
+    margin: 31px 0px 0px 37px;
 }
 
-#frontendDev section h2 {
+    #frontendDev section h2 {
         margin: 10px 75px;
-}
+    }
 
-#frontendDev section p {
+    #frontendDev section p {
         margin: 0 75px;
-}
+    }
 
 #rightColumn {
     width: 25%;
@@ -275,10 +310,18 @@ aside h2 {
 
 /*For table in classes.html*/
 table, tr, td, th {
-    border: 1px solid black;
+    border: 2px solid black;
+    background-color: lightgray;
     border-collapse: collapse /*this avoids duplicate adjacent borders inside of a table.*/
 }
-
+table tr th {
+    font-family: 'Bookman Old Style';
+    color: black;
+}
+    table tbody th {
+        font-family: Arial,Helvetica,sans-serif;
+        color: black;
+    }
 
 table {
     margin: auto;
@@ -295,16 +338,16 @@ td, th {
 }
 
 thead {
-    background-color: #96F3FA;
+    background-color: lightgray;
 }
 
 tfoot {
-    background-color: teal;
+    background-color: antiquewhite;
 }
 
-tfoot tr, tfoot td {
+    tfoot tr, tfoot td {
         border: 0;
-}
+    }
 
 tbody tr:nth-child(even) { /*this is how you can specify */
     background-color: lightsalmon;
