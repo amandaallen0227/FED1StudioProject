@@ -1,9 +1,9 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <!-- TODO: put Social media links on header. Create a text box for users to contact you. -->
+    <!-- TODO: Create a text box for users to contact you. -->
     <meta charset="utf-8" />
-    <meta name="description" content="This is a test page for HTML & CSS" />
+    <meta name="description" content="Contact.html" />
     <meta name=" keywords" content="html, css, FED1, centriq" />
     <meta name=" author" content="Amanda Allen" />
     <title> BRIM | Contact </title>
@@ -12,18 +12,27 @@
     <link href="CSS.css" rel="stylesheet" />
     <link href="stylesheets/CSS.css" rel="stylesheet" />
     <link href="css/bootstrap.icons.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/7f97b26c8e.js" crossorigin="anonymous"></script>
+
+    <!--<link href="css/bootstrap-flatly-theme-css.css" rel="stylesheet" />-->
 </head>
+
 <body>
     <header>
+
         <div id="headerOverlay">
-            <h1>
-                BRIM
-            </h1>
-            <p>
-                Helping Others Fill Their Cup
-            </p>
+            <h1>BRIM</h1>
+            <p> Helping Others Fill Their Cup </p>
         </div>
+
+        <div class="socialheader">
+            <a href="https://www.facebook.com/" target="_blank"> <i id="fbRight" class="fab fa-facebook"></i></a>
+            <a href="https://mobile.twitter.com/login" target="_blank"> <i id="twtrRight" class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i id="instaRight" class="fab fa-instagram-square"></i> </a>
+        </div>
+
     </header>
+
     <nav>       
         <ul id="nav-list" class="topnav">
             <li> <a href="index.html">Home</a> </li>
@@ -32,69 +41,27 @@
             <li class="active"><a href="Contact.html">Contact</a> </li>
         </ul>
     </nav>
-    <main>
-        <aside>
-            <h2> Please reach out, we'd love to hear from you!</h2>
-            <div class="row">
-                <form action="#" method="get" onssubmit="validateForm(event)"></form>
-                <div class="col-sm-offset-2 col-sm-8">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <input type="text" id="tbName" name="name" class="form-control" placeholder="Name" />
-                            <span id="rfvName" class="invalid"></span>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <input type="text" id="tbEmail" name="email" class="form-control" placeholder="Email" />
-                            <span id="rfvEmail" class="invalid"></span>
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <input type="text" id="tbSubject" name="subject" class="form-control" placeholder="Subject" />
-                            <span id="rfvSubject" class="invalid"></span>
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <textarea id="tbMessage" name="message" class="form-control" placeholder="Message"></textarea>
-                            <span id="rfvMessage" class="invalid"></span>
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <input type="submit" class="btn btn-success" value="Send Message" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <section>
-                <ul>
-                    <li>Phone:(816) 857-5309</li>
-                    <li>
-                        Email:<a href="mailto:learning@smallbiz.com " subject="subject text">
-                            learning@smallbiz.com
-                        </a>
-                    </li>
-                    <li>Address: 1740 W 92nd Street, Kansas City, MO 64114</li>
-                    <li>Twitter: <a href=" https.twitter.com/" target="_blank">@weteachstuff </a></li>
-                    <li> Facebook: <a href="https.facebook.com/" target="_blank"> @www.facebook.com/learwithus</a></li>
-                    <li>Linkedin:<a href="https.linkedin.com/" target="_blank"> www.linkedin.com/learnwithus</a></li>
-                </ul>
-            </section>
-        </aside>
-    </main>
+    <div class="wrapper">
+        <main>
+            <aside class="contact">
+                <h1 id="contactTitle">Contact Us</h1>
+                <h2> Please reach out, we'd love to hear from you!</h2>                              
+                        <p class="phone"><span class="label"><i class="fa fa-phone-square" aria-hidden="true" alt="Phone Number" title="Phone Number"></i> Phone: &nbsp;&nbsp;&nbsp;&nbsp;</span><a href="tel:+1-816-555-1212">816-857-5309</a></p>
+                        <p class="email"><span class="label"><i class="fa fa-envelope" aria-hidden="true" alt="Email" title="Email"></i> Email: &nbsp;&nbsp;&nbsp;&nbsp;</span><a href="mailto:learning@smallbiz.com">learning@smallbiz.com</a></p>
+                        <p class="address"><span class="label"><i class="fa fa-address-card" aria-hidden="true" alt="Address" title="Address"></i> Address: </span><a href="https://www.google.com/maps/place/1740+W+92+St,+Kansas+City,+MO+64114/@38.9633727,-94.6092255,17z/data=!3m1!4b1!4m5!3m4!1s0x87c0e92115e1322f:0x42ffe404446332c4!8m2!3d38.9633727!4d-94.6070368" target="_blank">1740 W 92<sup>nd</sup> Street, Kansas City, MO 64114</a></p>              
+            </aside>
+        </main>
+    </div>
     <footer>
         &copy;Copyright 2021 Amanda Allen
     </footer>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- JS Validation Sheet -->
     <script src="validation.js"></script>
     <!-- Bootstrap 3.3.7 minified JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
 
    
 </body>

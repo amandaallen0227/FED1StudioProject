@@ -1,29 +1,36 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <!-- TODO apply same structure to all photos that I did for the Home page + create toggle page for sidenav bar + CONTENT for all people (dont forget to reference small business sute project)! -->
     <meta charset="utf-8" />
-    <meta name="description" content="This is a test page for HTML & CSS" />
+    <meta name="description" content="Team.html" />
     <meta name=" keywords" content="html, css, FED1, centriq" />
     <meta name=" author" content="Amanda Allen" />
     <title> BRIM | Team </title>
     <!-- CSS.css sheet -->
     <link href="css/CSS.css" rel="stylesheet" />
-    <link href="CSS.css" rel="stylesheet" />
+    <link href="css/CSS.css" rel="stylesheet" />
     <link href="stylesheets/CSS.css" rel="stylesheet" />
     <link href="css/bootstrap.icons.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/7f97b26c8e.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
     <header>
+
         <div id="headerOverlay">
-            <h1>
-                BRIM
-            </h1>
-            <p>
-                Helping Others Fill Their Cup
-            </p>
+            <h1>BRIM</h1>
+            <p>Helping Others Fill Their Cup</p>
         </div>
+
+        <div class="socialheader">
+            <a href="https://www.facebook.com/" target="_blank"> <i id="fbRight" class="fab fa-facebook"></i></a>
+            <a href="https://mobile.twitter.com/login" target="_blank"> <i id="twtrRight" class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i id="instaRight" class="fab fa-instagram-square"></i> </a>
+        </div>
+
     </header>
+
     <nav>
         <ul id="nav-list" class="topnav">
             <li> <a href="index.html">Home</a> </li>
@@ -32,141 +39,159 @@
             <li><a href="Contact.html">Contact</a> </li>
         </ul>
     </nav>
-    <main>
-        <aside id="htmlRightColumn">
-            <h1> By Department </h1>
-            <ul>
-                <li href="#leadership">Leadership</li>
-                <li href="#sales">Sales</li>
-                <li href="administration">Administration</li>
-                <li href="instructors">Instructors</li>
+
+    <main class="teamMembers">
+        <aside>
+        <!-- Nav Bar -->
+        <aside class="departmentNavBar" id="htmlRightColumn">
+            <h1 id="departmentNavHead"> By Department </h1>
+            <ul class="navListItems">
+                <li> <a href="#leadership"/> Leadership</li>
+                <li> <a href="#sales"/>Sales</li>
+                <li> <a href="#administration"/>Administration</li>
+                <li> <a href="#instructors"/>Instructors</li>
             </ul>
         </aside>
+
+        <!-- Leadership, Sales, Administration, and Instructors -->
         <section class="mainWrapper" id="htmlLeftColumn">
+
             <aside id="leadership">
                 <h1 >
                     Leadership
                 </h1>
-                <div>
-                    <div>
-                        <img src="images/biracialboy.png" alt="young adult man smiling" title="young adult man " id="youngman" />
-                    </div>
-                    <div>
-                        <h2> Matthew Davis </h2>
-                        <i>Company President</i>
-                        <p>
-                            Matthew started as a content marketing professional at BRIM. Previously, he worked as a marketing manager for a tech software startup. He graduated with honors from Columbia University with a dual degree in Business Administration and Creative Writing.
-                        </p>
-                    </div>
+                <div class="teamMember">
+                    <img src="images/biracialboy.png" alt="young adult man smiling" title="young adult man " id="youngman" />
+
+                    <h2> Matthew Davis </h2>
+                    <i>Company President</i>
+                    <p>
+                        Matthew started as a content marketing professional at BRIM. Previously, he worked as a marketing manager for a tech software startup. He graduated with honors from Columbia University with a dual degree in Business Administration and Creative Writing.
+                    </p>
                 </div>
+                <div class="teamMember">
+                    <img src="images/baldwhiteguy.png" alt="bald man portrait" title="bald man" id="baldman" />
 
-                <img src="images/baldwhiteguy.png" alt="bald man portrait" title="bald man" id="baldman" />
+                    <h2> Uriah Powers</h2>
+                    <i>Executive</i>
+                    <p>
+                        You may recognize Uriah because he has been working at BRIM for a year and a half.
+                        Uriah's favorite memory at the shop is listening to live music on the patio, and making many dear friends while working!
+                    </p>
+                </div>
+                <div class="teamMember">
+                    <img src="images/smileybrunettepinksuit.png" alt="smiling short haired brunette" title="smiling brunette" id="smilingbrunette" />
 
-                <h2> Uriah Powers</h2>
-                <i>Executive</i>
-                <p>
-                    You may recognize Uriah because he has been working at BRIM for a year and a half.
-                    Uriah's favorite memory at the shop is listening to live music on the patio, and making many dear friends while working!
-                </p>
-
-
-                <img src="images/smileybrunettepinksuit.png" alt="smiling short haired brunette" title="smiling brunette" id="smilingbrunette" />
-
-                <h2> Victoria Long </h2>
-                <i>Executive</i>
-                <p>
-                    Fueling her body with exactly what it needs is one of her priorities, because “when we look good, we feel good.” No wonder she loves helping people discover what being healthy means to them personally. When she works, she looks forward to building connections not only with her coworkers, but also with her awesome customers; she loves creating a positive experience at the juice bar to give people a reason to keep coming back!
-                </p>
+                    <h2> Victoria Long </h2>
+                    <i>Executive</i>
+                    <p>
+                        Fueling her body with exactly what it needs is one of her priorities, because “when we look good, we feel good.” No wonder she loves helping people discover what being healthy means to them personally. When she works, she looks forward to building connections not only with her coworkers, but also with her awesome customers; she loves creating a positive experience at the juice bar to give people a reason to keep coming back!
+                    </p>
+                </div>
             </aside>
+
             <aside id="sales">
                 <h1>
                     Sales
                 </h1>
+                <div class="teamMember">
+                    <img src="images/blondewoman.png" alt="blonde woman sitting down with legs crossed" title="blonde women" id="blondewomen" />
 
-                <img src="images/blondewoman.png" alt="blonde woman sitting down with legs crossed" title="blonde women" id="blondewomen" />
+                    <h2> Cassandra Caro </h2>
+                    <i>Sales Lead</i>
+                    <p>
+                        Cass has been with BRIM for over 2 years as one of our Sales Representatives. Cass has the most infectious laugh, is so loving, and baker of the most gorgeous and yummy cookies. We are so lucky to have her, thank you for all you do!
+                    </p>
+                </div>
+                <div class="teamMember">
+                    <img src="images/blondeboy.png" alt="blonde man portrait outside" title="blonde man" id="blondeman" />
 
-                <h2> Cassandra Caro </h2>
-                <i>Sales Lead</i>
-                <p>
-                    Cass has been with BRIM for over 2 years as one of our Sales Representatives. Cass has the most infectious laugh, is so loving, and baker of the most gorgeous and yummy cookies. We are so lucky to have her, thank you for all you do!
-                </p>
+                    <h2> Mitch Hatton </h2>
+                    <i>Sales Support</i>
+                    <p>
+                        Mitch has been a core member of our team for almost a year and has served our business clients well!
+                    </p>
+                </div>
+                <div class="teamMember">
+                    <img src="images/blackguywithahat.png" alt="young man in leaning on a wall in a red hat" title="man in red hat" id="maninredhat" />
 
-                <img src="images/blondeboy.png" alt="blonde man portrait outside" title="blonde man" id="blondeman" />
+                    <h2> Alex Medlin </h2>
+                    <i>Sales Support</i>
+                    <p>
+                        Alex has been with us from the very beginning! Alex is responsible for all of our assets for clients across almost every platform. He both manages individual accounts as well as helps with direction on accounts that are assigned to others.
+                    </p>
+                </div>
 
-                <h2> Mitch Hatton </h2>
-                <i>Sales Support</i>
-                <p>
-                    Mitch has been a core member of our team for almost a year and has served our business clients well!
-                </p>
-
-                <img src="images/blackguywithahat.png" alt="young man in leaning on a wall in a red hat" title="man in red hat" id="maninredhat" />
-
-                <h2> Alex Medlin </h2>
-                <i>Sales Support</i>
-                <p>
-                    Alex has been with us from the very beginning! Alex is responsible for all of our assets for clients across almost every platform. He both manages individual accounts as well as helps with direction on accounts that are assigned to others.
-                </p>
             </aside>
+
             <aside id="administration">
                 <h1>
                     Administration
                 </h1>
-                <img src="images/asianbusinessman.png" alt="asian man smiling wearing a blue shirt" title="asian man smiling" id="mansmiling" />
+                <div class="teamMember">
+                    <img src="images/asianbusinessman.png" alt="asian man smiling wearing a blue shirt" title="asian man smiling" id="mansmiling" />
 
-                <h2> Andrew Best </h2>
-                <i>Operations Lead</i>
-                <p>
-                    Andrew is a true asset to BRIM and is an example of what can happen when hard work and preparation meet opportunity. Not only does he relentlessly work the hardest, but he truly cares about his employees!
-                </p>
+                    <h2> Andrew Best </h2>
+                    <i>Operations Lead</i>
+                    <p>
+                        Andrew is a true asset to BRIM and is an example of what can happen when hard work and preparation meet opportunity. Not only does he relentlessly work the hardest, but he truly cares about his employees!
+                    </p>
+                </div>
+                <div class="teamMember">
+                    <img src="images/biracialboy.png" alt="young adult man smiling" title="young adult man " id="youngman" />
 
-                <img src="images/biracialboy.png" alt="young adult man smiling" title="young adult man " id="youngman" />
+                    <h2> Abram White</h2>
+                    <i>Admin. Support</i>
+                    <p>
+                        Abram brings professionalism, dedication, and passion to this organization every single day. Thank you for being such a valuable member of our team!
+                    </p>
+                </div>
+                <div class="teamMember">
+                    <img src="images/blackwomen.png" alt="black business woman smiling" title="smiling black woman" id="smilingwoman" />
 
-                <h2> Abram White</h2>
-                <i>Admin. Support</i>
-                <p>
-                    Abram brings professionalism, dedication, and passion to this organization every single day. Thank you for being such a valuable member of our team!
-                </p>
-
-
-                <img src="images/blackwomen.png" alt="black business woman smiling" title="smiling black woman" id="smilingwoman" />
-
-                <h2> Monica Baker </h2>
-                <i>Admin. Support</i>
-                <p>
-                    Monica has been with BRIM since we opened! She loves getting to know new people and talking to them at the pop stop! In her spare time she plays guitar, likes to hang out with her friends and bake! She makes a mean Rice Krispie treat!
-                    So, say hi to her next time you see her in the shop!
-                </p>
+                    <h2> Monica Baker </h2>
+                    <i>Admin. Support</i>
+                    <p>
+                        Monica has been with BRIM since we opened! She loves getting to know new people and talking to them at the pop stop! In her spare time she plays guitar, likes to hang out with her friends and bake! She makes a mean Rice Krispie treat!
+                        So, say hi to her next time you see her in the shop!
+                    </p>
+                </div>
             </aside>
+
             <aside id="instructors">
                 <h1>
                     Instructors
                 </h1>
-                <img src="images/man with glasses.png" alt="young man with glasses" title="young man smiling" id="youngmanwithglasses" />
+                <div class="teamMember">
+                    <img src="images/man with glasses.png" alt="young man with glasses" title="young man smiling" id="youngmanwithglasses" />
 
-                <h2> Braden Cheadle </h2>
-                <i>Technical Lead</i>
-                <p>
-                    Braden is committed to quality and unwavering service to all. We appreciate him for his  creativity and for providing daily laughs!
-                </p>
+                    <h2> Braden Cheadle </h2>
+                    <i>Technical Lead</i>
+                    <p>
+                        Braden is committed to quality and unwavering service to all. We appreciate him for his creativity and for providing daily laughs!
+                    </p>
+                </div>
+                <div class="teamMember">
+                    <img src="images/brunnettegirlredshirt.png" alt="white women in a red shirt smiling" title="woman in red smiling" id="redshirtwoman" />
 
-                <img src="images/brunnettegirlredshirt.png" alt="white women in a red shirt smiling" title="woman in red smiling" id="redshirtwoman" />
+                    <h2> Rebecca Grasher </h2>
+                    <i>Technical Support</i>
+                    <p>
+                        Meet Rebecca! Her positive attitude and mindset along with her talent for coffee has made a lasting impression on our guests. Thank you for being such a valuable part of our team, Rebecca!
+                    </p>
+                </div>
+                <div class="teamMember">
+                    <img src="images/dreadlockwhiteboy.png" alt="man with blonde dreadlocks" title="man with blonde dreadlocks" id="mandreadlocks" />
 
-                <h2> Rebecca Grasher </h2>
-                <i>Technical Support</i>
-                <p>
-                    Meet Rebecca! Her positive attitude and mindset along with her talent for coffee has made a lasting impression on our guests. (She is typically booked out a week in advance!) Thank you for being such a valuable part of our team, Rebecca!
-                </p>
-
-
-                <img src="images/dreadlockwhiteboy.png" alt="man with blonde dreadlocks" title="man with blonde dreadlocks" id="mandreadlocks" />
-
-                <h2> Keith Johnson </h2>
-                <i>Technical Support</i>
-                <p>
-                    Meet Keith, he has been with us for 5 years!
-                    Keith enjoys meeting everyone with a smile and loves to interact with our guests. Make sure you stop by and say hello.
-                </p>
+                    <h2> Keith Johnson </h2>
+                    <i>Technical Support</i>
+                    <p>
+                        Meet Keith, he has been with us for 5 years!
+                        Keith enjoys meeting everyone with a smile and loves to interact with our guests. Make sure you stop by and say hello.
+                    </p>
+                </div>
             </aside>
+
         </section>
        
 

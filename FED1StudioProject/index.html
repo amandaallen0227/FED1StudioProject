@@ -3,7 +3,7 @@
 <head>
     <!-- TODO: Font fix for 'about us' & content + 'our' statements  -->
     <meta charset="utf-8" />
-    <meta name="description" content="This is a FED1StudioProject" />
+    <meta name="description" content="FED1StudioProject" />
     <meta name=" keywords" content="home page" />
     <meta name=" author" content="Amanda Allen" />
     <title> BRIM | Home </title>
@@ -12,13 +12,20 @@
     <link href="CSS.css" rel="stylesheet" />
     <link href="stylesheets/CSS.css" />
     <link href="css/bootstrap.icons.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/7f97b26c8e.js" crossorigin="anonymous"></script>
+
 
 </head>
 <body>
-    <header>    
+    <header>
         <div id="headerOverlay">
             <h1>BRIM</h1>
             <p> Helping Others Fill Their Cup  </p>
+        </div>
+        <div class="socialheader">
+            <a href="https://www.facebook.com/" target="_blank"> <i id="fbRight" class="fab fa-facebook"></i></a>
+            <a href="https://mobile.twitter.com/login" target="_blank"> <i id="twtrRight" class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i id="instaRight" class="fab fa-instagram-square"></i> </a>
         </div>
     </header>
     <nav>
@@ -32,11 +39,11 @@
     <main>
         <div>
             <div>
-                <img src="images/baristagirl1.png" alt="female barista wearing an orange beanie behind the bar smiling" title="female barista smiling" id="femaleBarista" width="250" height="250" />
+                <img src="images/outside coffee shop corner.jpg" alt="female barista wearing an orange beanie behind the bar smiling" title="female barista smiling" id="aboutUsImage1" width="250" height="250" />
             </div>
             <div>
-                <section>
-                    <h1 > About Us</h1>
+                <section id="indexaboutus">
+                    <h1> About Us</h1>
                     <p>
                         BRIM provides high-quality training space and programs specifically for coffee professionals.<br />
                         Our roots are in the technical service world of specialty coffee, and we are uniquely equipped <br>
@@ -56,30 +63,29 @@
                     </h2>
                     
                         <img src="images/barista about to tamp.jpg" alt="portafilter filled with ground coffee w/ a barista about to tamp" title="barista about to tamp" id="baristaTamp" />
-                        <h1>
-                            Our Story
-                        </h1>
-                        <p id="ourStory">
-                            Brim was founded in 2008 and opened our very first brick and morte the summer of 2010. We believe that will high quality education and competative training methods we can produce the best baristas the world could offer. Our approach to instructing is hands-on; within the first day you will already have your hands the good stuff, coffee beans. We believe that when people and coffee come together something magical happens.
+                        <div>
+                            <h1>
+                                Our Story
+                            </h1>
+                            <p id="ourStory">
+                                Brim was founded in 2008 and opened our very first brick and morte the summer of 2010. We believe that will high quality education and competative training methods we can produce the best baristas the world could offer. Our approach to instructing is hands-on; within the first day you will already have your hands the good stuff, coffee beans. We believe that when people and coffee come together something magical happens.
 
-                        </p>
+                            </p>
+                        </div>
                 </section>
                 <section id="frontendDev">
                     <img src="images/Chemex.jpg" alt="Coffee being poured out of a Chemex" title="Chemex pour" id="chemexPour" />
+                    <div class="ourFacility">
+                        <h1>
+                            Our Facility
+                        </h1>
+                        <p>
 
-                    <h1 id="ourFacility">
-                        Our Facility
-                    </h1>
-                    <p id="ourFacilityP">
+                            Centrally located in downtown Tampa we have close to 16000 square feet of training labs, large classroom spaces, and individual training rooms. With plenty of space and in-house know-how, we are uniquely equipped to create custom environments for our customers. BRIM shares space with The Coffee Lab, Butter Churner and two independent coffee consulting practices, making our home a destination for coffee professionals and enthusiasts in the Midwest.
 
-                        Centrally located in downtown Tampa we have close to 16000 square feet of training labs, large classroom spaces, and individual training rooms.
-                        <!--<br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>-->
-                    </p>
+                        </p>
+                    </div>
+
                 </section>
 
             </article>

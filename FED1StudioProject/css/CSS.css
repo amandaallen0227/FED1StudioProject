@@ -1,27 +1,8 @@
 ﻿
-/*- Cannot figure out how to create Image Gallery in my Classes.html
-    Need a refresher on margin
-    Where can I put color so that I know it will apply and I don't have to apply it anywhere else?
-*/
 
 @import url('import.css');
 /*adobe theme colors:
 */
-
-/*background image for the entire page*/
-body { /*KEEP*/
-    /*background: url(../Images/ben-krygsman-745458-unsplash.jpg) no-repeat center center fixed;
-    background-size: cover;*/
-    margin: 1%; /*margin removes the browsers margin that it presuposses on there*/
-}
-
-/*background image for the entire page*/
-body {
-    background: url('/images/coffeeshopbigfile.jpg') no-repeat center center fixed;
-    background-size: cover;
-    margin: 5%; /*margin removes the browsers margin that it presuposses on there*/
-    padding: 2%;
-}
 /* Colors for this project:
     #262626
     #F2E2CE
@@ -30,6 +11,93 @@ body {
    FONTS:
     font-family: 'Bookman Old Style';
 */
+
+/*Header*/
+
+#headerOverlay {
+    background-image: url('../images/waterdropblackjennasedit.png');
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: 3% 64%;
+    padding: 1em;
+}
+
+header { /*KEEP*/
+    background-color: #F2E2CE;
+    position: relative;
+}
+
+    header .socialheader {
+        font-size: 30px;
+        width: 203px;
+        position: absolute;
+        top: 30px;
+        right: 0;
+    }
+
+#indexTitle {
+    font-family: 'Bookman Old Style';
+    font-size: 25px;
+}
+
+header h1 { /*KEEP*/
+    letter-spacing: 0.1em;
+    color: #000;
+    margin: 7px 0 7px 124px;
+    font-size: 80px;
+    font-family: 'Bookman Old Style';
+    /*This clears the text of the bg image are*/
+}
+
+header p {
+    letter-spacing: 1px;
+    margin: -19px 0 0px 125px;
+    font-size: 15px;
+}
+
+
+/*background image for the entire page*/
+body {
+    background: url('/images/coffeeshopbigfile.jpg') no-repeat center center fixed;
+    background-size: cover;
+     /*margin removes the browsers margin that it presuposses on there*/
+    padding: 1%;
+}
+
+
+/*Index.html Page*/
+
+#aboutUsImage1 {
+    float: left;
+    height: 301px;
+    margin-left: -10px;
+    margin-top: 31px;
+    margin-right: 35px;
+}
+
+#chemexPour {
+    float: right;
+    margin-left: 6%;
+    margin-top: 0%;
+    margin-right: -2.7%;
+    border: 2px solid;
+}
+
+#baristaTamp {
+    float: left;
+    margin-left: -2%;
+    margin-right: 3.5%;
+    border: 2px solid;
+}
+
+
+#indexaboutus {   
+    padding: 6%; 
+}
+
+.ourFacility {
+    padding: 5% 0%;
+}
 
 #classSub {
     margin: 1%;
@@ -40,78 +108,17 @@ body {
 
 
 
-#chemexPour {
-    float: right;
-    height: 257px;
-    margin-left: 9%;
-    margin-top: 0%;
-    margin-right: 26.5%;
-   
-}
-
-#baristaTamp {
-    float: left;
-    height: 248px;
-    margin-left: 8%;
-    margin-top: 0%;
-    margin-right: 2%;
-}
-
-
-#femaleBarista {
-    float: left;
-    height: 301px;
-    margin-left: 21px;
-    margin-top: 21px;
-    margin-right: 21px;
-}
-
-#headerOverlay {
-    background-image: url(.../images/waterdropblackjennasedit.png);
-    background-repeat: no-repeat;
-    background-size: 100px;
-    background-position: 3% 64%;
-    padding: 1em;
-}
-
-header { /*KEEP*/
-    background-color: #F2E2CE;
-    font: 70px;
-}
-#indexTitle {
-    font-family: 'Bookman Old Style';
-    font-size: 25px;
-}
-
-    header h1 { /*KEEP*/
-        letter-spacing: 0.1em;
-        color: #000;
-        margin: 7px 0 7px 69px;
-        font-size: 99px;
-        font-family: 'Bookman Old Style';
-        /*This clears the text of the bg image are*/
-    }
-
-    header p {
-        letter-spacing: 1px;
-        margin: -19px 0 0px 72px;
-        font-size: 15px;
-    }
-
 h1 p {
     display: block;
     font-family: Arial,Helvetica,sans-serif;
 }
 
-p {
-    font-family: Arial,Helvetica,sans-serif;
-    margin: 1% 0% 22% 0%;
-}
+
 
 section h1 {
     color: #262626;
     font-family: 'Bookman Old Style';
-  
+    margin-top: 4px;
 }
 
 /*Centering classes.html*/
@@ -129,19 +136,22 @@ main { /*KEEP*/
     background-color: antiquewhite;
     padding: 0% 4% 8% 4%;
     margin: 1%, 7%;
+    max-width: 980px;
+    margin: auto;
+    position: relative;
 }
 
     /*index why choose us*/
 main section article h2 {
         font-size: 37px;    
-        margin-bottom: 12px;
-        margin-top: -10px;
+        margin-bottom: 14px;
+        margin-top: 48px;
 }
 
 /*Team Nav*/
 main aside h1 {
     font-family: 'Bookman Old Style';
-    font-size: 35px;
+    font-size: 29px;
 }
 aside ul li {
     font-family: Arial,Helvetica,sans-serif;
@@ -155,7 +165,9 @@ aside ul li {
         background: antiquewhite;
  }
 
+section, h1 p {
 
+}
 
     footer { /*KEEP*/
         background-color: #262626;
@@ -191,7 +203,7 @@ a:hover, a:active, a:focus { /*KEEP*/
 }
 
 nav ul {
-    margin: 0px 0px 0px -175px;
+    margin: auto;
     padding: 0px 0px 0px 200px;
     word-spacing: 35px;
     background-color: transparent; /*KEEP b/c we are making the nav bar white instead of the browser choosing the background to be white for us.*/
@@ -210,50 +222,52 @@ nav ul {
             font-size: 18px;
         }
 
+.card {
+    display: block;
+    float: left;
+    border: 3px outset lightgray;
+    padding: 4px;
+    width: 235px;
+    height: 370px;
+    margin: 10px 35px;
+    font-size: 19px;
+}
+    .card:hover {
+        border-color: #F2E2CE;
+    }
 
 
-/*TODO insert new photo 
-     background-repeat: no-repeat;
-    background-size: 90px;
-    background-position: 3% center; /*horizontal vertical*/ */
+.classes-grid a {
+    color: inherit;
+}
+.classes-grid h3 {
+    font-size: 20px;
+    font-family: 'Bookman Old Style';
+    text-align: center;
+}
+.classes-grid p {
+    font-size: 12px;
+    font-family: Arial,Helvetica,sans-serif;
+    margin: auto;
+}
+.classes-grid img {
 
-div.galleryItem {
-    margin: 5px;
-    border: 1px solid#CCC;
-    display: inline-block; /*this is the line of code that allows the divs to line up next to each other*/
-    width: 350px; /*applies just to the content does not apply to padding and margin*/
 }
 
-div.galleryItem:hover {
-    border: 1px solid white;
-}
-
-div.galleryItem img {
-    width: 32%;
-}
-
-div.galleryItem a:hover {
-    background-color: lightsalmon;
-}
-
-#imageGallery {
-    margin: 0 auto; /*0 margin for top and bottom and then automaticly figure out the margin for L and R so that this is CENTER - this centers the elemet with the id of imageGallery */
-    width: 83%;
-    text-align: center; /*this centers the content inside the element with the id of imageGalley*/
-}
 
 .mainWrapper {
     padding: 1%;
+    border-radius: 100%;
 }
 
-/*For CSS.html - 2 column layout with both columns floated - because both columns are floated we do NOT want the parent element to collapse so we have to add in a clear (line in the sand)*/
+
 
 #cssLeftColumn {
-    width: 75%; /*if we are floating it to the left or right it has to be less than 100%*/
+    width: 75%;
     float: left;
     border-right: 1px dashed #262626;
     box-sizing: border-box;
-    /*this changes the way width and height are figured. With border-box you are saying that the 73% width includes not only content but also padding and border*/
+
 }
 
 #cssRightColumn { /*I made a mistake here initially becaues i put cssLeftColumn instead of cssRightColumn. This cause the css.html page to switch the content that was supposed to be on the left to on the right and vice versa.*/
@@ -279,6 +293,8 @@ section aside div p {
 
 aside h2 {
     font-size: 25px;
+    margin-top: 3%;
+    margin-bottom: 5%;
 }
 
     aside h2 i {
@@ -289,7 +305,7 @@ aside h2 {
 
 
 #ourStory {
-    margin: 53px 75px;
+    margin: 6px 0px 75px 0px;
 }
 #frontendDev section {
     width: 86%;
@@ -310,15 +326,38 @@ aside h2 {
 
 #htmlLeftColumn {
     margin-right: 25%;
-    border-right: 1px dashed #262626;
+    border-right: 1px dashed #fff;
 }
 
 #htmlRightColumn {
     width: 25%;
     float: right;
 }
+#departmentNavBar {
+    width: 25%;
+    float: right;
+    padding: .5em;
+}
+.departmentNavHead {
+    font-family: 'Bookman Old Style';
+    font-size: 29px;
+    padding: 0% 0%;
+}
+#navListItems{
 
+}
 
+.teamMembers section aside img {
+    width: 100%;
+    max-width: 180px;
+    float: left;
+    margin: 0 40px 20px 0;
+    border-radius: 100px;
+}
+.teamMember p {
+    font-family: Arial,Helvetica,sans-serif;
+    margin: 1% 0% 20% 0%;
+}
 /*TABLE in Classes.html*/
 table, tr, td, th {
     border: 2px solid black;
@@ -360,3 +399,45 @@ tfoot {
         border: 0;
     }
 
+
+/*Contact Box*/
+#contactTitle {
+    font-size: 55px;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 6vh;
+}
+.center {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: antiquewhite;
+}
+.contactinfo {
+    width: 610px;
+    margin: auto;
+    overflow: auto;
+    min-height: 800px;
+    background-color: antiquewhite;
+}
+.contact {
+    width: 610px;
+    margin: auto;
+    overflow: auto;
+  
+}
+.wrapper{
+    margin: 0 20px;
+}
+.contact .phone, .contact .email, .contact .address {
+    font-size: 1.5em;
+    border-top: solid 4px;
+    border-bottom: solid 4px;
+}
+p {
+    font-family: Arial,Helvetica,sans-serif;
+    margin: 1% 0% 3% 0%;
+}

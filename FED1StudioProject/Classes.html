@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="description" content="This is a test page for HTML & CSS" />
+    <meta name="description" content="Class.html" />
     <meta name=" keywords" content="html, css, FED1, centriq" />
     <meta name=" author" content="Amanda Allen" />
     <title> BRIM | Classes </title>
@@ -12,6 +12,8 @@
     <link href="stylesheets/CSS.css" rel="stylesheet" />
     <link href="css/bootstrap.icons.css" rel="stylesheet" />
     <link href="css/bootstrap.icons.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/7f97b26c8e.js" crossorigin="anonymous"></script>
+
 
 </head>
 <body>
@@ -24,88 +26,92 @@
                 Helping Others Fill Their Cup
             </p>
         </div>
+        <div class="socialheader">
+            <a href="https://www.facebook.com/" target="_blank"> <i id="fbRight" class="fab fa-facebook"></i></a>
+            <a href="https://mobile.twitter.com/login" target="_blank"> <i id="twtrRight" class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i id="instaRight" class="fab fa-instagram-square"></i> </a>
+        </div>
     </header>
     <nav>
         <ul id="nav-list" class="topnav">
             <li> <a href="index.html">Home</a> </li>
-            <li class="active"> <a href="Classes.html">Classes</a> </liclass="active">
+            <li class="active"> <a href="Classes.html">Classes</a> </li>
             <li> <a href="Team.html">Team</a> </li>
             <li><a href="Contact.html">Contact</a> </li>
         </ul>
     </nav>
     <main>
-        <section class="mainWrapper">
-            <article id="classSub">
-                <h2 id="mainHeader"> CLASS SUBJECTS</h2>
-                    <div>
-                        <div class="galleryItem">
-                            <a href="#grindWater">
-                                <img src="images/coffeeGrind.png" target="_blank" alt="Espresso Grinder collecting grounds into portafilter" id="coffeeGrinder" width="400" height="200" />
-                                <h3>- Grind + Water -</h3>
-                            </a>
-                            <div>
+        <section class="classes-grid">
+            <article class="classes">
+                <h2 id="mainHeader"> Class Subjects</h2>
+                <div class="classRow">
+
+                    <a href="#grindWater">
+                        <article class="card">
+                            <img src="images/coffeeGrind.png" target="_blank" alt="Espresso Grinder collecting grounds into portafilter" id="coffeeGrinder" width="200" height="200" />
+                            <h3>- Grind & Water -</h3>
+                            <p>
                                 grinding espresso is a critical element to the cadence of brewing coffee. Whether it is brewed coffee, espresso, chemex, or your home coffee maker: grind matters! <br />
-                            </div>
+                            </p>
+                        </article>
+                    </a>
 
-                        </div>
+                    <a href="#espressoMachine ">
+                        <article class="card">
+                            <img src="images/second espresso machine image.jpg" target="_blank" alt="Clean front of espresso machine" id="espressoMachine" width="200" height="200" />
+                            <h3>- Espresso Machine Mechanics-</h3>
+                            <p>
+                                An espresso machine is a complex machine. For the common barista it is the main tool they use to serve their customers. We have offerings at 3 levels to become an expert on servicing your own machine! <br />
+                            </p>
+                        </article>
+                    </a>
 
-                        <div class="galleryItem">
-                            <a href="#espressoMachine ">
-                                <img src="images/second espresso machine image.jpg" target="_blank" alt="Clean front of espresso machine" id="espressoMachine" width="400" height="200" />
-                                <h3>- Everything you need to know about an Espresso Machine -</h3>
-                            </a>
-                            <div>An espresso machine is a complex machine. For the common barista it is the main tool they use to serve their customers. We have offerings at 3 levels to become an expert on servicing your own machine! <br/> 
-                            </div>
-                            
-                        </div>
+                    <a href="#espresso">
+                        <article class="card">
+                            <img src="images/espresso from blind basket.jpg" target="_blank" alt="The underside the portafilter revealing the blind basket" id="blindBasket" width="200" height="200" />
+                            <h3> - Espresso -</h3>
+                            <p>
+                                Espresso can be a little touchy. One wrong move and you've messed up your shot! Come learn from the best all the ways to improve your pull.<br />
+                            </p>
+                        </article>
+                    </a>
 
-                        <div class="galleryItem">
-                            <a href="#espresso">
-                                <img src="images/espresso from blind basket.jpg" target="_blank" alt="The underside the portafilter revealing the blind basket" id="blindBasket" width="400" height="200" />
+                </div>
 
-                                <h3> - All things espresso -</h3>
-                            </a>
-                            <div>Espresso can be a little touchy. One wrong move and you've messed up your shot! Come learn from the best all the ways to improve your pull.<br/>
-                            </div>
 
-                        </div>
-                    </div>
+                <div class="classRow">
 
-                    <div>
-                        <div class="galleryItem">
-                            <a href="#whereCoffee ">
-                                <img src="images/coffee fruit.jpg" target="_blank" alt="Fruit vine that coffee bean is incase in" id="coffeBeanFruit" width="400" height="200" />
+                    <a href="#whereCoffee ">
+                        <article class="card">
+                            <img src="images/coffee fruit.jpg" target="_blank" alt="Fruit vine that coffee bean is incase in" id="coffeBeanFruit" width="200" height="200" />
+                            <h3>- Coffee Orgins -</h3>
+                            <p>
+                                Did you know the only places that coffee beans grow is around the equator? This is where it all starts. If this piece of the process goes wrong it will affect the coffee bean all the way through <br />
+                            </p>
+                        </article>
+                    </a>
 
-                                <h3>- Where Coffee Comes From -</h3>
-                            </a>
-                            <div>
-                                Did you know the only places that coffee beans grow is around the equator? This is where it all starts. If this piece of the process goes wrong it will affect the coffee bean all the way through <br/>
-                            </div>
+                    <a href="#brewedCoffee">
+                        <article class="card">
+                            <img src="images/Chemex.jpg" target="_blank" alt="hot water poured into chemex to brew coffee beans" id="chemex" width="200" height="200" />
+                            <h3> - Brewed Coffee -</h3>
+                            <p>
+                                Drip coffee is the most popular coffee drink option in the world! It is simple yet complex.<br />
+                            </p>
+                        </article>
+                    </a>
 
-                        </div>
+                    <a href="#roastingCoffee">
+                        <article class="card">
+                            <img src="images/roaster2.jpg" target="_blank" alt="Large coffee bean roaster churning beans" id="beanRoaster" width="200" height="200" />
+                            <h3> - Roasting -</h3>
+                            <p>
+                                grinding espresso is a critical element to the cadence of brewing coffee. Whether it is brewed coffee, espresso, chemex, or your home coffee maker: grind matters!<br />
+                            </p>
+                        </article>
+                    </a>
 
-                        <div class="galleryItem">
-                            <a href="#brewedCoffee">
-                                <img src="images/Chemex.jpg" target="_blank" alt="hot water poured into chemex to brew coffee beans" id="chemex" width="400" height="200" />
-
-                                <h3> - Brewed Coffee -</h3>
-                            </a>
-                            <div> Drip coffee is the most popular coffee drink option in the world! It is simple yet complex.<br/> 
-                            </div>
-                            
-                        </div>
-
-                        <div class="galleryItem">
-                            <a href="#roastingCoffee">
-                                <img src="images/roaster2.jpg" target="_blank" alt="Large coffee bean roaster churning beans" id="beanRoaster" width="400" height="200" />
-
-                                <h3> - Learn how to roast with high quality beans -</h3>
-                            </a>
-                            <div> grinding espresso is a critical element to the cadence of brewing coffee. Whether it is brewed coffee, espresso, chemex, or your home coffee maker: grind matters!<br/>
-                            </div>
-                           
-                        </div>
-                    </div>                
+                </div>
             </article>
         </section>
         <!-- -------------Beginning of Table 1 -->
@@ -493,7 +499,7 @@
                 </tr>
             </tfoot>
         </table>
-        <!-- -------------End of Table -->
+        <!-- -------------End of Tables -->
     </main>
     <footer>
         &copy;Copyright 2021 Amanda Allen
