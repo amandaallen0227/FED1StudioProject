@@ -1,15 +1,14 @@
 ﻿
-
 @import url('import.css');
-/*adobe theme colors:
-*/
-/* Colors for this project:
+
+/* Items for this project:
+    COLORS:
     #262626
     #F2E2CE
     lightgrey
     antiquewhite
    FONTS:
-    font-family: 'Bookman Old Style';
+    font-family: 'Bookman Old Style', Arial,Helvetica,sans-serif.
 */
 
 /*Header*/
@@ -22,7 +21,7 @@
     padding: 1em;
 }
 
-header { /*KEEP*/
+header {
     background-color: #F2E2CE;
     position: relative;
 }
@@ -40,13 +39,12 @@ header { /*KEEP*/
     font-size: 25px;
 }
 
-header h1 { /*KEEP*/
+header h1 {
     letter-spacing: 0.1em;
     color: #000;
     margin: 7px 0 7px 124px;
     font-size: 80px;
     font-family: 'Bookman Old Style';
-    /*This clears the text of the bg image are*/
 }
 
 header p {
@@ -55,17 +53,27 @@ header p {
     font-size: 15px;
 }
 
-
-/*background image for the entire page*/
 body {
     background: url('/images/coffeeshopbigfile.jpg') no-repeat center center fixed;
     background-size: cover;
-     /*margin removes the browsers margin that it presuposses on there*/
     padding: 1%;
 }
 
-
 /*Index.html Page*/
+
+
+#ourStory {
+    margin: 6px 0px 75px 0px;
+}
+
+#frontendDev section {
+    width: 86%;
+    margin: 31px 0px 0px 37px;
+}
+
+    #frontendDev section h2 {
+        margin: 10px 75px;
+    }
 
 #aboutUsImage1 {
     float: left;
@@ -90,9 +98,8 @@ body {
     border: 2px solid;
 }
 
-
-#indexaboutus {   
-    padding: 6%; 
+#indexaboutus {
+    padding: 6%;
 }
 
 .ourFacility {
@@ -106,24 +113,15 @@ body {
     color: antiquewhite;
 }
 
-
-
 h1 p {
     display: block;
     font-family: Arial,Helvetica,sans-serif;
 }
 
-
-
 section h1 {
     color: #262626;
     font-family: 'Bookman Old Style';
     margin-top: 4px;
-}
-
-/*Centering classes.html*/
-section article h2 {
-    text-align: center;
 }
 
 h2 {
@@ -132,7 +130,7 @@ h2 {
     margin: 0;
 }
 
-main { /*KEEP*/
+main {
     background-color: antiquewhite;
     padding: 0% 4% 8% 4%;
     margin: 1%, 7%;
@@ -142,65 +140,11 @@ main { /*KEEP*/
 }
 
     /*index why choose us*/
-main section article h2 {
-        font-size: 37px;    
+    main section article h2 {
+        font-size: 37px;
         margin-bottom: 14px;
         margin-top: 48px;
-}
-
-/*Team Nav*/
-main aside h1 {
-    font-family: 'Bookman Old Style';
-    font-size: 29px;
-}
-aside ul li {
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 25px;
-}
- main h2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 6vh;
-        background: antiquewhite;
- }
-
-section, h1 p {
-
-}
-
-    footer { /*KEEP*/
-        background-color: #262626;
-        color: white;
     }
-
-footer { /*KEEP*/
-    padding: 1%;
-    margin-top: 2%;
-
-}
-
-
-
-/*below affects color of display for links in contact*/
-a {
-    font-weight: bolder;
-    text-decoration: none;
-    color: #262626;
-}
-
-ul.blockList a:hover { /*KEEP*/
-    background-color: #262626;
-    color: antiquewhite;
-}
-
-/*below is affecting links on contact page*/
-a:hover, a:active, a:focus { /*KEEP*/
-    color: #262626;
-    text-decoration: none;
-    background-color: lightgrey;
-    font-weight: bold;
-}
 
 nav ul {
     margin: auto;
@@ -222,6 +166,9 @@ nav ul {
             font-size: 18px;
         }
 
+/*Classes.html*/
+
+
 .card {
     display: block;
     float: left;
@@ -232,45 +179,50 @@ nav ul {
     margin: 10px 35px;
     font-size: 19px;
 }
+
     .card:hover {
         border-color: #F2E2CE;
     }
 
-
 .classes-grid a {
     color: inherit;
 }
+
 .classes-grid h3 {
     font-size: 20px;
     font-family: 'Bookman Old Style';
     text-align: center;
 }
+
 .classes-grid p {
     font-size: 12px;
     font-family: Arial,Helvetica,sans-serif;
     margin: auto;
 }
-.classes-grid img {
 
+.classes-grid img {
+    width: 235px;
 }
 
+#classesTitle {
+    font-size: 37px;
+    text-align: center;
+    font-family: 'Bookman Old Style';
+}
 
 .mainWrapper {
     padding: 1%;
     border-radius: 100%;
 }
 
-
-
 #cssLeftColumn {
     width: 75%;
     float: left;
     border-right: 1px dashed #262626;
     box-sizing: border-box;
-
 }
 
-#cssRightColumn { /*I made a mistake here initially becaues i put cssLeftColumn instead of cssRightColumn. This cause the css.html page to switch the content that was supposed to be on the left to on the right and vice versa.*/
+#cssRightColumn {
     width: 25%;
     float: right;
 }
@@ -279,95 +231,18 @@ nav ul {
     clear: both; /*a clear has to be put inside the PARENT*/
 }
 
-
-/*This is for Team.html column right */
-aside h1 {
-    padding: 2%;
-    margin-top: 0;
-    font-size: 32px;
-}
-
-section aside div p {
-    font-family: Arial,Helvetica,sans-serif;
-}
-
-aside h2 {
-    font-size: 25px;
-    margin-top: 3%;
-    margin-bottom: 5%;
-}
-
-    aside h2 i {
-        font-size: 15px;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-#ourStory {
-    margin: 6px 0px 75px 0px;
-}
-#frontendDev section {
-    width: 86%;
-    margin: 31px 0px 0px 37px;
-}
-
-    #frontendDev section h2 {
-        margin: 10px 75px;
-    }
-
-
-#rightColumn {
-    width: 25%;
-    float: right;
-}
-
-/*Likely for Team.html - 2 column layout with 1 column floated and margin to clear the space for the content*/
-
-#htmlLeftColumn {
-    margin-right: 25%;
-    border-right: 1px dashed #fff;
-}
-
-#htmlRightColumn {
-    width: 25%;
-    float: right;
-}
-#departmentNavBar {
-    width: 25%;
-    float: right;
-    padding: .5em;
-}
-.departmentNavHead {
-    font-family: 'Bookman Old Style';
-    font-size: 29px;
-    padding: 0% 0%;
-}
-#navListItems{
-
-}
-
-.teamMembers section aside img {
-    width: 100%;
-    max-width: 180px;
-    float: left;
-    margin: 0 40px 20px 0;
-    border-radius: 100px;
-}
-.teamMember p {
-    font-family: Arial,Helvetica,sans-serif;
-    margin: 1% 0% 20% 0%;
-}
 /*TABLE in Classes.html*/
 table, tr, td, th {
     border: 2px solid black;
     background-color: lightgray;
     border-collapse: collapse /*this avoids duplicate adjacent borders inside of a table.*/
 }
-table tr th {
-    font-family: 'Bookman Old Style';
-    color: black;
-}
+
+    table tr th {
+        font-family: 'Bookman Old Style';
+        color: black;
+    }
+
     table tbody th {
         font-family: Arial,Helvetica,sans-serif;
         color: black;
@@ -399,8 +274,98 @@ tfoot {
         border: 0;
     }
 
+/* Team.html */
+
+/*Team Nav*/
+main aside h1 {
+    font-family: 'Bookman Old Style';
+    font-size: 29px;
+}
+
+aside ul li {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 25px;
+}
+
+main h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 6vh;
+    background: antiquewhite;
+}
+
+section, h1 p {
+}
+
+aside h1 {
+    padding: 2%;
+    margin-top: 0;
+    font-size: 32px;
+}
+
+section aside div p {
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+aside h2 {
+    font-size: 25px;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+    aside h2 i {
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+#rightColumn {
+    width: 25%;
+    float: right;
+}
+
+#htmlLeftColumn {
+    margin-right: 25%;
+    border-right: 1px dashed #fff;
+}
+
+#htmlRightColumn {
+    width: 25%;
+    float: right;
+}
+
+#departmentNavBar {
+    width: 25%;
+    float: right;
+    padding: .5em;
+}
+
+.departmentNavHead {
+    font-family: 'Bookman Old Style';
+    font-size: 29px;
+    padding: 0% 0%;
+}
+
+#navListItems {
+}
+
+.teamMembers section aside img {
+    width: 100%;
+    max-width: 180px;
+    float: left;
+    margin: 0 40px 20px 0;
+    border-radius: 100px;
+}
+
+.teamMember p {
+    font-family: Arial,Helvetica,sans-serif;
+    margin: 1% 0% 20% 0%;
+}
 
 /*Contact Box*/
+
+
 #contactTitle {
     font-size: 55px;
     margin-top: 10%;
@@ -409,6 +374,7 @@ tfoot {
     align-items: center;
     min-height: 6vh;
 }
+
 .center {
     flex-direction: column;
     display: flex;
@@ -416,6 +382,7 @@ tfoot {
     align-items: center;
     background: antiquewhite;
 }
+
 .contactinfo {
     width: 610px;
     margin: auto;
@@ -423,21 +390,53 @@ tfoot {
     min-height: 800px;
     background-color: antiquewhite;
 }
+
 .contact {
     width: 610px;
     margin: auto;
     overflow: auto;
-  
 }
-.wrapper{
+
+.wrapper {
     margin: 0 20px;
 }
+
 .contact .phone, .contact .email, .contact .address {
     font-size: 1.5em;
     border-top: solid 4px;
     border-bottom: solid 4px;
 }
+
 p {
     font-family: Arial,Helvetica,sans-serif;
     margin: 1% 0% 3% 0%;
+}
+
+a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: #262626;
+}
+
+ul.blockList a:hover {
+    background-color: #262626;
+    color: antiquewhite;
+}
+
+a:hover, a:active, a:focus {
+    color: #262626;
+    text-decoration: none;
+    background-color: lightgrey;
+    font-weight: bold;
+}
+
+/*Footer*/
+footer {
+    background-color: #262626;
+    color: white;
+}
+
+footer {
+    padding: 1%;
+    margin-top: 2%;
 }
